@@ -1,0 +1,19 @@
+<h2 class="ui dividing header">修改员工</h2>
+<%= simple_form_for [@user], url: admin_users_path, method: :put, remote: true do |f| %>
+    <div class="two fields">
+      <%= f.input :name, required: false %>
+      <%= f.input :email %>
+    </div>
+    <div class="two fields">
+      <%= f.input :password, as: :password %>
+      <%= f.input :password_confirmation, as: :password %>
+    </div>
+    <div class="two fields">
+      <%= f.input :mobile %>
+      <%= f.input :office_tel %>
+    </div>
+<% end %>
+<div class="actions">
+  <div class="ui button" onclick="javascript: $('#edit_user_modal').modal('hide')">取消</div>
+  <div class="ui blue button" onclick="javascript: $('#edit_user_<%= @user.id %>').submit();" >确定</div>
+</div>

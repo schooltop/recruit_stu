@@ -1,0 +1,33 @@
+<div class="ui grid">
+  <div class="left floated fourteen wide column">
+    <h2>员工管理</h2>
+  </div>
+</div>
+<%= render 'search_form'  %>
+<div class="ui blue segment">
+  <div class="ui grid">
+    <div class="left floated wide column">
+      <%= link_to new_admin_user_path, remote: true, class: 'ui primary button' do %>
+        <i class="plus icon"></i>新增用户
+      <% end %>
+    </div>
+  </div>
+  <table class="ui selectable striped celled table">
+    <thead>
+    <tr >
+      <th class="center aligned">ID</th>
+      <th class="center aligned">邮箱</th>
+      <th class="center aligned">姓名</th>
+      <th class="center aligned">手机</th>
+      <th class="center aligned">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render partial: 'list', collection: @users, as: :user %>
+    </tbody>
+  </table>
+  <span class="blue">
+    <%= page_entries_info(@users) %>
+  </span>
+  <%= paginate(@users, :theme => 'admin')%>
+</div>

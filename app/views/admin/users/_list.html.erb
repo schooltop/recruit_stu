@@ -1,0 +1,19 @@
+<tr id="<%= ajax_bar_element_id(user) %>">
+  <td class="center aligned">
+    <span><%= user.id%></span>
+  </td>
+  <td class="center aligned">
+    <%=  user.email%>
+  </td>
+  <td class="center aligned">
+    <%= user.name %>
+  </td>
+  <td class="center aligned">
+    <%= user.mobile %>
+  </td>
+  <td class="center aligned">
+    <%= link_to_with_permissions edit_admin_user_path(user), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
+      <i class="edit icon"></i>
+    <% end %>
+  </td>
+</tr>
