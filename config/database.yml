@@ -1,0 +1,34 @@
+default: &default
+  adapter: mysql2
+  pool: 5
+  reconnect: true
+  username: root
+  password: 
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: recruit_stu_development
+
+
+test:
+  <<: *default
+  database: recruit_stu_test
+
+staging:
+  <<: *default
+  database: recruit_stu_staging
+  username: root
+  password: root
+  host: localhost
+  port: 3306
+  #socket: /var/run/mysqld/mysqld.sock
+
+production:
+  <<: *default
+  database: recruit_stu_production
+  username: root
+  password: root
+  host: localhost
+  port: 3306
+  #socket: /var/run/mysqld/mysqld.sock
