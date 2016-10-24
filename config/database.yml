@@ -19,7 +19,7 @@ staging:
   <<: *default
   database: recruit_stu_staging
   username: root
-  password: root
+  password: 
   host: localhost
   port: 3306
   #socket: /var/run/mysqld/mysqld.sock

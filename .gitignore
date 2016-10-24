@@ -1,0 +1,17 @@
+/config/database.yml
+/.config
+
+/tmp/
+log/
+.DS_Store
+
+
+/public/assets/
+
+/rdoc/
+
+# Gemfile.lock
+.ruby-version
+.ruby-gemset
+
+.rvmrc
