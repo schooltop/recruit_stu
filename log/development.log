@@ -216,3 +216,1347 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'recruit_stu_development'
   AND fk.table_name = 'written_scores'
 [0m
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+Started GET "/" for ::1 at 2016-10-24 19:02:02 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.2ms)
+Started GET "/" for ::1 at 2016-10-24 19:02:03 +0800
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1248ms (Views: 1239.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1023ms (Views: 1022.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2016-10-24 19:02:15 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (6.8ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.2ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.9ms)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:02:22 +0800
+  
+SyntaxError (/Users/jamst/workbook/recruit_stu/app/controllers/admin/users_controller.rb:1: class/module name must be CONSTANT
+class Admin::usersController < Admin::BaseController
+                              ^):
+  
+app/controllers/admin/users_controller.rb:1: class/module name must be CONSTANT
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.2ms)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:03:27 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::UsersController#index as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<Admin::UsersController:0x007ff28b48ca58>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+actionpack (5.0.0.rc2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.rc2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.rc2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.rc2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.rc2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.rc2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.rc2) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.0ms)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:06:14 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::UsersController#index as HTML
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authentication_keys' for #<Class:0x007ffd537253c8>):
+  
+activerecord (5.0.0.rc2) lib/active_record/dynamic_matchers.rb:21:in `method_missing'
+devise (4.2.0) lib/devise/failure_app.rb:103:in `i18n_message'
+devise (4.2.0) lib/devise/failure_app.rb:83:in `redirect'
+devise (4.2.0) lib/devise/failure_app.rb:41:in `respond'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:126:in `process'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:251:in `block in action'
+devise (4.2.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.2.0) lib/devise/delegator.rb:5:in `call'
+warden (1.2.6) lib/warden/manager.rb:142:in `call_failure_app'
+warden (1.2.6) lib/warden/manager.rb:128:in `process_unauthenticated'
+warden (1.2.6) lib/warden/manager.rb:43:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.rc2) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.3ms)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:07:52 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::UsersController#index as HTML
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authentication_keys' for #<Class:0x007fac37828bc0>):
+  
+activerecord (5.0.0.rc2) lib/active_record/dynamic_matchers.rb:21:in `method_missing'
+devise (4.2.0) lib/devise/failure_app.rb:103:in `i18n_message'
+devise (4.2.0) lib/devise/failure_app.rb:83:in `redirect'
+devise (4.2.0) lib/devise/failure_app.rb:41:in `respond'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:126:in `process'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:251:in `block in action'
+devise (4.2.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.2.0) lib/devise/delegator.rb:5:in `call'
+warden (1.2.6) lib/warden/manager.rb:142:in `call_failure_app'
+warden (1.2.6) lib/warden/manager.rb:128:in `process_unauthenticated'
+warden (1.2.6) lib/warden/manager.rb:43:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.rc2) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.3ms)
+Started GET "/admin/users/new" for ::1 at 2016-10-24 19:09:27 +0800
+Processing by Admin::UsersController#new as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authentication_keys' for #<Class:0x007fac37828bc0>):
+  
+activerecord (5.0.0.rc2) lib/active_record/dynamic_matchers.rb:21:in `method_missing'
+devise (4.2.0) lib/devise/failure_app.rb:103:in `i18n_message'
+devise (4.2.0) lib/devise/failure_app.rb:83:in `redirect'
+devise (4.2.0) lib/devise/failure_app.rb:41:in `respond'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:126:in `process'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:251:in `block in action'
+devise (4.2.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.2.0) lib/devise/delegator.rb:5:in `call'
+warden (1.2.6) lib/warden/manager.rb:142:in `call_failure_app'
+warden (1.2.6) lib/warden/manager.rb:128:in `process_unauthenticated'
+warden (1.2.6) lib/warden/manager.rb:43:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.rc2) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.2ms)
+Started GET "/" for ::1 at 2016-10-24 19:09:33 +0800
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 251ms (Views: 249.6ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+Started GET "/" for ::1 at 2016-10-24 19:10:44 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 274ms (Views: 265.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/users" for ::1 at 2016-10-24 19:10:54 +0800
+Processing by Admin::UsersController#index as HTML
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authentication_keys' for #<Class:0x007fdfc62f8390>):
+  
+activerecord (5.0.0.rc2) lib/active_record/dynamic_matchers.rb:21:in `method_missing'
+devise (4.2.0) lib/devise/failure_app.rb:103:in `i18n_message'
+devise (4.2.0) lib/devise/failure_app.rb:83:in `redirect'
+devise (4.2.0) lib/devise/failure_app.rb:41:in `respond'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:126:in `process'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:251:in `block in action'
+devise (4.2.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.2.0) lib/devise/delegator.rb:5:in `call'
+warden (1.2.6) lib/warden/manager.rb:142:in `call_failure_app'
+warden (1.2.6) lib/warden/manager.rb:128:in `process_unauthenticated'
+warden (1.2.6) lib/warden/manager.rb:43:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.rc2) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.2ms)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:15:08 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::UsersController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-24 19:15:08 +0800
+Processing by Web::SessionsController#new as HTML
+  Rendering web/sessions/new.html.erb within layouts/application
+  Rendered web/sessions/new.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 328ms (Views: 314.2ms | ActiveRecord: 1.3ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/admin-logo.png"):
+  
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0.rc2) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0.rc2) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0.rc2) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.8ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY '107422244@qq.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('jamst', '107422244@qq.com', '$2a$10$Nm3SUbTaVQjnyzQtWfqfIuwqxJHf/G5856HjCkpPioiGXCzJUHKkC', '2016-10-24 11:17:57', '2016-10-24 11:17:57')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+Started POST "/users/sign_in" for ::1 at 2016-10-24 19:18:28 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Web::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NOuoNsqnALdsmb9l4qEIeWRcwGyJ4PRyQb+Tb0Wk9gtn2ojRekfT0b39XOv03LsTJVPplFmFwB2+hN10IolzuQ==", "user"=>{"email"=>"107422244@qq.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"登陆"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '107422244@qq.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE `users` SET `remember_created_at` = '2016-10-24 11:18:28', `updated_at` = '2016-10-24 11:18:28' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE `users` SET `sign_in_count` = 1, `current_sign_in_at` = '2016-10-24 11:18:28', `last_sign_in_at` = '2016-10-24 11:18:28', `current_sign_in_ip` = '::1', `last_sign_in_ip` = '::1' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 3.9ms)
+
+
+  
+NoMethodError (undefined method `is_active?' for #<User:0x007f84d57077c0>
+Did you mean?  is_valid?):
+  
+app/controllers/web/sessions_controller.rb:12:in `create'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.8ms)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+Started POST "/users/sign_in" for ::1 at 2016-10-24 19:19:18 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Web::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NOuoNsqnALdsmb9l4qEIeWRcwGyJ4PRyQb+Tb0Wk9gtn2ojRekfT0b39XOv03LsTJVPplFmFwB2+hN10IolzuQ==", "user"=>{"email"=>"107422244@qq.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"登陆"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '107422244@qq.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `sign_in_count` = 2, `current_sign_in_at` = '2016-10-24 11:19:18', `updated_at` = '2016-10-24 11:19:18' WHERE `users`.`id` = 1[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 3.6ms)
+
+
+  
+NoMethodError (undefined method `format_date' for 2016-10-24 19:19:18 +0800:Time
+Did you mean?  format):
+  
+app/controllers/web/sessions_controller.rb:14:in `block in create'
+app/controllers/web/sessions_controller.rb:13:in `create'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.2ms)
+Started POST "/users/sign_in" for ::1 at 2016-10-24 19:20:15 +0800
+Processing by Web::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NOuoNsqnALdsmb9l4qEIeWRcwGyJ4PRyQb+Tb0Wk9gtn2ojRekfT0b39XOv03LsTJVPplFmFwB2+hN10IolzuQ==", "user"=>{"email"=>"107422244@qq.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"登陆"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '107422244@qq.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE `users` SET `sign_in_count` = 3, `current_sign_in_at` = '2016-10-24 11:20:15', `last_sign_in_at` = '2016-10-24 11:19:18', `updated_at` = '2016-10-24 11:20:15' WHERE `users`.`id` = 1[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 3.9ms)
+
+
+  
+NoMethodError (undefined method `format_date' for 2016-10-24 19:20:15 +0800:Time
+Did you mean?  format):
+  
+app/controllers/web/sessions_controller.rb:14:in `block in create'
+app/controllers/web/sessions_controller.rb:13:in `create'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.0ms)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+Started POST "/users/sign_in" for ::1 at 2016-10-24 19:21:00 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Web::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NOuoNsqnALdsmb9l4qEIeWRcwGyJ4PRyQb+Tb0Wk9gtn2ojRekfT0b39XOv03LsTJVPplFmFwB2+hN10IolzuQ==", "user"=>{"email"=>"107422244@qq.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"登陆"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '107422244@qq.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `sign_in_count` = 4, `current_sign_in_at` = '2016-10-24 11:21:00', `last_sign_in_at` = '2016-10-24 11:20:15', `updated_at` = '2016-10-24 11:21:00' WHERE `users`.`id` = 1[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 106ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/admin/users" for ::1 at 2016-10-24 19:21:00 +0800
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::MissingTemplate (Missing template layouts/admin with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jamst/workbook/recruit_stu/app/views"
+  * "/Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/devise-4.2.0/app/views"
+  * "/Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/bundler/gems/kaminari-5344ee9896d4/kaminari-core/app/views"
+):
+  
+actionview (5.0.0.rc2) lib/action_view/path_set.rb:46:in `find'
+actionview (5.0.0.rc2) lib/action_view/lookup_context.rb:122:in `find'
+actionview (5.0.0.rc2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+actionview (5.0.0.rc2) lib/action_view/renderer/template_renderer.rb:89:in `resolve_layout'
+actionview (5.0.0.rc2) lib/action_view/renderer/template_renderer.rb:96:in `resolve_layout'
+actionview (5.0.0.rc2) lib/action_view/renderer/template_renderer.rb:76:in `find_layout'
+actionview (5.0.0.rc2) lib/action_view/renderer/template_renderer.rb:60:in `render_with_layout'
+actionview (5.0.0.rc2) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+actionview (5.0.0.rc2) lib/action_view/renderer/template_renderer.rb:14:in `render'
+actionview (5.0.0.rc2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+actionview (5.0.0.rc2) lib/action_view/renderer/renderer.rb:23:in `render'
+actionview (5.0.0.rc2) lib/action_view/rendering.rb:103:in `_render_template'
+actionpack (5.0.0.rc2) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+actionview (5.0.0.rc2) lib/action_view/rendering.rb:83:in `render_to_body'
+actionpack (5.0.0.rc2) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (5.0.0.rc2) lib/action_controller/metal/renderers.rb:144:in `render_to_body'
+actionpack (5.0.0.rc2) lib/abstract_controller/rendering.rb:26:in `render'
+actionpack (5.0.0.rc2) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+activesupport (5.0.0.rc2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+activesupport (5.0.0.rc2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+activerecord (5.0.0.rc2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:43:in `render'
+remotipart (1.3.1) lib/remotipart/render_overrides.rb:16:in `render_with_remotipart'
+actionpack (5.0.0.rc2) lib/action_controller/metal/implicit_render.rb:36:in `default_render'
+actionpack (5.0.0.rc2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.0.rc2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.rc2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.rc2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.rc2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.rc2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.rc2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.rc2) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (56.3ms)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:27:42 +0800
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/index.html.erb within layouts/admin
+  Rendered admin/users/_search_form.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered collection of admin/users/_list.html.erb [1 times] (21.7ms)
+  Rendered admin/users/index.html.erb within layouts/admin (25.7ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `ajax_bar_element_id' for #<#<Class:0x007fcbe6418c78>:0x007fcbe2692278>
+Did you mean?  ajax_bar_url):
+    1: <tr id="<%= ajax_bar_element_id(user) %>">
+    2:   <td class="center aligned">
+    3:     <span><%= user.id%></span>
+    4:   </td>
+  
+app/views/admin/users/_list.html.erb:1:in `_app_views_admin_users__list_html_erb__553496237461520464_70256827142820'
+app/views/admin/users/index.html.erb:26:in `_app_views_admin_users_index_html_erb__733870861677148678_70256826816920'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.6ms)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:33:58 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/index.html.erb within layouts/admin
+  Rendered admin/users/_search_form.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered collection of admin/users/_list.html.erb [1 times] (23.1ms)
+  Rendered admin/users/index.html.erb within layouts/admin (29.8ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `link_to_with_permissions' for #<#<Class:0x007fc7d33ec388>:0x007fc7d33f51e0>
+Did you mean?  link_to_remote_options?):
+    12:     <%= user.mobile %>
+    13:   </td>
+    14:   <td class="center aligned">
+    15:     <%= link_to_with_permissions edit_admin_user_path(user), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
+    16:       <i class="edit icon"></i>
+    17:     <% end %>
+    18:   </td>
+  
+app/views/admin/users/_list.html.erb:15:in `_app_views_admin_users__list_html_erb___182685795942008188_70248109910840'
+app/views/admin/users/index.html.erb:26:in `_app_views_admin_users_index_html_erb___654974181408163772_70248109664480'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.7ms)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:34:32 +0800
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/index.html.erb within layouts/admin
+  Rendered admin/users/_search_form.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered collection of admin/users/_list.html.erb [1 times] (0.7ms)
+  Rendered admin/users/index.html.erb within layouts/admin (11.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `entry_name' for #<User::ActiveRecord_Relation:0x007fc7d1fea1c8>
+Did you mean?  entries):
+    27:     </tbody>
+    28:   </table>
+    29:   <span class="blue">
+    30:     <%= page_entries_info(@users) %>
+    31:   </span>
+    32:   <%= paginate(@users, :theme => 'admin')%>
+    33: </div>
+  
+app/views/admin/users/index.html.erb:30:in `_app_views_admin_users_index_html_erb___654974181408163772_70248132015600'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.5ms)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:35:43 +0800
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/index.html.erb within layouts/admin
+  Rendered admin/users/_search_form.html.erb (31.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  Rendered collection of admin/users/_list.html.erb [1 times] (0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  Rendered admin/users/index.html.erb within layouts/admin (41.8ms)
+  Rendered shared/admin/_top_bar.html.erb (25.2ms)
+Completed 500 Internal Server Error in 514ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_USER' for #<#<Class:0x007fc7d22add38>:0x007fc7d1a438c8>
+Did you mean?  current_user):
+     6:     <a class="icon item pointer" data-toggle="popup" data-content="#mail" data-position="bottom right"><i class="mail icon"></i></a>
+     7:     <a class="icon item pointer" data-toggle="popup" data-content="#notif" data-position="bottom right"><i class="bell icon"></i></a>
+     8:     <!-- 头像 -->
+     9:     <div class="item"><span><%= current_USER.name %></span></div>
+    10:     <a class="icon item pointer" data-toggle="popup" data-content="#user" data-position="bottom right">
+    11:       <%= image_tag 'male.jpg', class: 'ui avatar image' %>
+    12:     </a>
+  
+app/views/shared/admin/_top_bar.html.erb:9:in `_app_views_shared_admin__top_bar_html_erb___557334322605019678_70248129447960'
+app/views/layouts/admin.html.erb:11:in `_app_views_layouts_admin_html_erb__2448770421848307252_70248099071920'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.6ms)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:36:25 +0800
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/index.html.erb within layouts/admin
+  Rendered admin/users/_search_form.html.erb (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  Rendered collection of admin/users/_list.html.erb [1 times] (0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  Rendered admin/users/index.html.erb within layouts/admin (9.2ms)
+  Rendered shared/admin/_top_bar.html.erb (1.3ms)
+  Rendered shared/admin/_sidebar.html.erb (0.4ms)
+  Rendered shared/_alert.html.erb (16.8ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `alert_type' for #<#<Class:0x007fc7d22add38>:0x007fc7d3f82378>):
+    1: <% flash.each do |type, msg| %>
+    2:   <div class="<%= alert_type(type) %>">
+    3:     <i class="close icon"></i>
+    4:     <p><%= msg %></p>
+    5:   </div>
+  
+app/views/shared/_alert.html.erb:2:in `block in _app_views_shared__alert_html_erb__1524388652811997561_70248155098740'
+app/views/shared/_alert.html.erb:1:in `_app_views_shared__alert_html_erb__1524388652811997561_70248155098740'
+app/views/layouts/admin.html.erb:22:in `_app_views_layouts_admin_html_erb__2448770421848307252_70248111339740'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.3ms)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:37:13 +0800
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/index.html.erb within layouts/admin
+  Rendered admin/users/_search_form.html.erb (2.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  Rendered collection of admin/users/_list.html.erb [1 times] (0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  Rendered admin/users/index.html.erb within layouts/admin (9.0ms)
+  Rendered shared/admin/_top_bar.html.erb (1.0ms)
+  Rendered shared/admin/_sidebar.html.erb (0.3ms)
+  Rendered shared/_alert.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 30.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/users" for ::1 at 2016-10-24 19:37:30 +0800
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/index.html.erb within layouts/admin
+  Rendered admin/users/_search_form.html.erb (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  Rendered collection of admin/users/_list.html.erb [1 times] (0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  Rendered admin/users/index.html.erb within layouts/admin (8.6ms)
+  Rendered shared/admin/_top_bar.html.erb (1.2ms)
+  Rendered shared/admin/_sidebar.html.erb (0.5ms)
+  Rendered shared/_alert.html.erb (0.3ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/users" for ::1 at 2016-10-24 19:39:02 +0800
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/index.html.erb within layouts/admin
+  Rendered admin/users/_search_form.html.erb (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  Rendered collection of admin/users/_list.html.erb [1 times] (0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  Rendered admin/users/index.html.erb within layouts/admin (8.6ms)
+  Rendered shared/admin/_top_bar.html.erb (1.1ms)
+  Rendered shared/admin/_sidebar.html.erb (0.4ms)
+  Rendered shared/_alert.html.erb (0.3ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/users/new" for ::1 at 2016-10-24 19:39:12 +0800
+Processing by Admin::UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 406 Not Acceptable in 33ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::UnknownFormat (Admin::UsersController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []):
+  
+actionpack (5.0.0.rc2) lib/action_controller/metal/implicit_render.rb:43:in `default_render'
+actionpack (5.0.0.rc2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.0.rc2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.rc2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.rc2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.rc2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.rc2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.rc2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.rc2) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.5ms)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:41:14 +0800
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/index.html.erb within layouts/admin
+  Rendered admin/users/_search_form.html.erb (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  Rendered collection of admin/users/_list.html.erb [1 times] (0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  Rendered admin/users/index.html.erb within layouts/admin (8.9ms)
+  Rendered shared/admin/_top_bar.html.erb (1.1ms)
+  Rendered shared/admin/_sidebar.html.erb (0.4ms)
+  Rendered shared/_alert.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/users/new" for ::1 at 2016-10-24 19:41:18 +0800
+Processing by Admin::UsersController#new as JS
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/new.js.erb
+  Rendered admin/users/_new.html.erb (31.8ms)
+  Rendered admin/users/new.js.erb (43.6ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `office_tel' for #<User:0x007fc7d9cdcfa0>):
+    10:     </div>
+    11:     <div class="two fields">
+    12:       <%= f.input :mobile %>
+    13:       <%= f.input :office_tel %>
+    14:     </div>
+    15: <% end %>
+    16: <div class="actions">
+  
+app/views/admin/users/_new.html.erb:13:in `block in _app_views_admin_users__new_html_erb___3725946885001159566_70248164503480'
+app/views/admin/users/_new.html.erb:2:in `_app_views_admin_users__new_html_erb___3725946885001159566_70248164503480'
+app/views/admin/users/new.js.erb:3:in `_app_views_admin_users_new_js_erb__4416389295436850203_70248164620220'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (30.9ms)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:42:11 +0800
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/index.html.erb within layouts/admin
+  Rendered admin/users/_search_form.html.erb (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  Rendered collection of admin/users/_list.html.erb [1 times] (0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  Rendered admin/users/index.html.erb within layouts/admin (9.0ms)
+  Rendered shared/admin/_top_bar.html.erb (1.4ms)
+  Rendered shared/admin/_sidebar.html.erb (0.4ms)
+  Rendered shared/_alert.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/users/new" for ::1 at 2016-10-24 19:42:13 +0800
+Processing by Admin::UsersController#new as JS
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/new.js.erb
+  Rendered admin/users/_new.html.erb (6.4ms)
+  Rendered admin/users/new.js.erb (16.8ms)
+Completed 200 OK in 47ms (Views: 36.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/users/new" for ::1 at 2016-10-24 19:42:38 +0800
+Processing by Admin::UsersController#new as JS
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/new.js.erb
+  Rendered admin/users/_new.html.erb (5.8ms)
+  Rendered admin/users/new.js.erb (15.7ms)
+Completed 200 OK in 46ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/users/1/edit" for ::1 at 2016-10-24 19:42:53 +0800
+Processing by Admin::UsersController#edit as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `set_employee' for #<Admin::UsersController:0x007fc7d720a9a8>
+Did you mean?  set_response!):
+  
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:150:in `block (2 levels) in halting_and_conditional'
+actionpack (5.0.0.rc2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.rc2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.rc2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.rc2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.rc2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.rc2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.rc2) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.6ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (47.4ms)
+Started GET "/admin/users/1/edit" for ::1 at 2016-10-24 19:42:55 +0800
+Processing by Admin::UsersController#edit as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `set_employee' for #<Admin::UsersController:0x007fc7d8d97220>
+Did you mean?  set_response!):
+  
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:150:in `block (2 levels) in halting_and_conditional'
+actionpack (5.0.0.rc2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.rc2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.rc2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.rc2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.rc2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.rc2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.rc2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.rc2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.rc2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.rc2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.rc2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+remotipart (1.3.1) lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.rc2) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.0) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc2) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.4ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (47.0ms)
+Started GET "/admin/users" for ::1 at 2016-10-24 19:44:04 +0800
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering admin/users/index.html.erb within layouts/admin
+  Rendered admin/users/_search_form.html.erb (3.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  Rendered collection of admin/users/_list.html.erb [1 times] (0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  Rendered admin/users/index.html.erb within layouts/admin (10.8ms)
+  Rendered shared/admin/_top_bar.html.erb (1.1ms)
+  Rendered shared/admin/_sidebar.html.erb (0.3ms)
+  Rendered shared/_alert.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 34.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/users/1/edit" for ::1 at 2016-10-24 19:44:05 +0800
+Processing by Admin::UsersController#edit as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering admin/users/edit.js.erb
+  Rendered admin/users/_edit.html.erb (24.7ms)
+  Rendered admin/users/edit.js.erb (35.6ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `office_tel' for #<User:0x007fc7da530fa8>):
+    10:     </div>
+    11:     <div class="two fields">
+    12:       <%= f.input :mobile %>
+    13:       <%= f.input :office_tel %>
+    14:     </div>
+    15: <% end %>
+    16: <div class="actions">
+  
+app/views/admin/users/_edit.html.erb:13:in `block in _app_views_admin_users__edit_html_erb___3270817579786810383_70248168965140'
+app/views/admin/users/_edit.html.erb:2:in `_app_views_admin_users__edit_html_erb___3270817579786810383_70248168965140'
+app/views/admin/users/edit.js.erb:3:in `_app_views_admin_users_edit_js_erb___3188853374943731419_70248169035500'
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (31.6ms)
+Started GET "/admin/users/1/edit" for ::1 at 2016-10-24 19:44:26 +0800
+Processing by Admin::UsersController#edit as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering admin/users/edit.js.erb
+  Rendered admin/users/_edit.html.erb (6.0ms)
+  Rendered admin/users/edit.js.erb (16.5ms)
+Completed 200 OK in 47ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+

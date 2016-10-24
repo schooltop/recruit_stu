@@ -1,0 +1,6 @@
+<% flash.each do |type, msg| %>
+  <div class="<%= alert_type(type) %>">
+    <i class="close icon"></i>
+    <p><%= msg %></p>
+  </div>
+<% end %>

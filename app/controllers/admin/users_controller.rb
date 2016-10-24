@@ -1,11 +1,11 @@
-class Admin::usersController < Admin::BaseController
+class Admin::UsersController < Admin::BaseController
 
-	before_action :set_employee, only: [:edit, :update, :roles, :update_roles, :edit_parent, :update_parent]
+	before_action :set_user, only: [:edit, :update]
 
   def index
     @q = SearchParams.new(params[:search_params] || {})
     search_params = @q.attributes(self)
-    @user = User.default_where(search_params).page(params[:page]).per(10)
+    @users = User.default_where(search_params).page(params[:page]).per(10)
   end
 
   def new
