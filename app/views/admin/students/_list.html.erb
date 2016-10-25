@@ -1,0 +1,28 @@
+<tr id="<%= ajax_bar_element_id(student) %>">
+  <td class="center aligned">
+    <span><%= student.id_card%></span>
+  </td>
+  <td class="center aligned">
+    <%=  student.email%>
+  </td>
+  <td class="center aligned">
+    <%= student.name %>
+  </td>
+  <td class="center aligned">
+    <%= student.mobile %>
+  </td>
+  <td class="center aligned">
+    <%= student.student_no %>
+  </td>
+  <td class="center aligned">
+    <%= student.status %>
+  </td>
+  <td class="center aligned">
+    <%= student.apply_status %>
+  </td>
+  <td class="center aligned">
+    <%= link_to edit_admin_student_path(student), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
+      <i class="edit icon"></i>
+    <% end %>
+  </td>
+</tr>
