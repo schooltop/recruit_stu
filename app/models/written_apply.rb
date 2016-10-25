@@ -1,0 +1,3 @@
+class WrittenApply < ApplicationRecord
+  
+end

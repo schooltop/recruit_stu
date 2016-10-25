@@ -1,0 +1,3 @@
+class WrittenScore < ApplicationRecord
+  
+end

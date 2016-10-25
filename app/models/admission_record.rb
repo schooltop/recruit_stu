@@ -1,0 +1,3 @@
+class AdmissionRecord < ApplicationRecord
+  
+end

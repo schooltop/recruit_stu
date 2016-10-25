@@ -1,0 +1,22 @@
+<tr id="<%= ajax_bar_element_id(admission_record) %>">
+  <td class="center aligned">
+    <span><%= admission_record.student_id%></span>
+  </td>
+  <td class="center aligned">
+    <%=  admission_record.interview_score_id%>
+  </td>
+  <td class="center aligned">
+    <%= admission_record.written_score_id %>
+  </td>
+  <td class="center aligned">
+    <%= admission_record.status %>
+  </td>
+  <td class="center aligned">
+    <%= admission_record.comment %>
+  </td>
+  <td class="center aligned">
+    <%= link_to edit_admin_admission_record_path(admission_record), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
+      <i class="edit icon"></i>
+    <% end %>
+  </td>
+</tr>
