@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<!--[if ie 6]>
+<html class="ie6 lt-ie9 lt-ie8" lang="zh-cn">
+<![endif]-->
+<!--[if ie 7]>
+<html class="ie7 lt-ie9 lt-ie8" lang="zh-cn">
+<![endif]-->
+<!--[if ie 8]>
+<html class="ie8 lt-ie9" lang="zh-cn">
+<![endif]-->
+<!--[if ie 9]>
+<html class="ie9" lang="zh-cn">
+<![endif]-->
+<!--[if !ie]><!-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-cn">
+<!--<![endif]-->
+<head>
+   <%= render 'shared/web/top' %>
+</head>
+<body>
+
+<div class="wrapper wrapper-about">
+	
+	<%= render 'shared/web/top' %>
+
+    <div class="bodyer nav-position page-bg-right">
+        <div class="container mp-1">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-md-push-4 mp-2">
+                	 <p class= "left_b" >&nbsp;</p>
+
+                     <%= yield %>
+
+                     <p>&nbsp;</p>
+
+					 <p>&nbsp;</p>
+
+					 <p>&nbsp;</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-md-pull-8 position-2">
+                    <div class="marquee-box marquee-4">
+                        <div class="marquee-show" id="left_show">
+                            <div class="marquee-list">
+                                <div class="nav-side left_a" id="left_list"  ontouchstart="otst(event);" ontouchend="oted1(event);">
+                                    <ul class="nav-list" style="position:relative;left:0px;">
+                                      <%#= left_title_select t("notice"),"/student_notices" %>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%= render 'shared/web/footer' %>
+
+</div>
+
+</body>
+</html>
+
