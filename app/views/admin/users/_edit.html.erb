@@ -1,5 +1,5 @@
 <h2 class="ui dividing header">修改员工</h2>
-<%= simple_form_for [@user], url: admin_users_path, method: :put, remote: true do |f| %>
+<%= simple_form_for [@user], url: admin_user_path, method: :put, remote: true do |f| %>
     <div class="two fields">
       <%= f.input :name, required: false %>
       <%= f.input :email %>
