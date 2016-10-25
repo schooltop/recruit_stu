@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://ruby.taobao.org/'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -37,7 +37,7 @@ gem 'devise'#, git: 'https://github.com/plataformatec/devise.git'
 gem 'whenever', :require => false
 # 异步上传文件
 gem 'remotipart', '~> 1.2'
-gem 'spreadsheet'
+gem 'spreadsheet' 
 gem 'roo', require: false
 gem 'carrierwave'
 gem 'httparty'

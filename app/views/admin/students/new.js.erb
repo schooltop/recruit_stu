@@ -1,0 +1,9 @@
+$('#new_student_modal').remove();
+$('#edit_student_modal').remove();
+$('body').append('<div class="ui modal" id="new_student_modal"><i class="close icon"></i><%= j(render 'new') %></div>');
+$('#new_student_modal').modal('setting', {autofocus: false}).modal('show');
+$('select.dropdown').dropdown({placeholder: false});
+$("input").focus(function(){
+  $(this).parent().removeClass('error');
+  $(this).parent().find('.red.pointing').remove();
+});

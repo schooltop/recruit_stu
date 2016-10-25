@@ -1,0 +1,19 @@
+<h2 class="ui dividing header">新增学生</h2>
+<%= simple_form_for [@student], url: admin_students_path, method: :post, remote: true do |f| %>
+   <div class="two fields">
+      <%= f.input :name, required: false %>
+      <%= f.input :email %>
+    </div>
+    <div class="two fields">
+      <%= f.input :id_card %>
+      <%= f.input :student_no%>
+    </div>
+    <div class="two fields">
+      <%= f.input :mobile %>
+      <%= f.input :telephone %>
+    </div>
+<% end %>
+<div class="actions">
+  <div class="ui button" onclick="javascript: $('#new_student_modal').modal('hide')">取消</div>
+  <div class="ui blue button" onclick="javascript: $('#new_student').submit();" >确定</div>
+</div>

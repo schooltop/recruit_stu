@@ -1,0 +1,36 @@
+<div class="ui grid">
+  <div class="left floated fourteen wide column">
+    <h2>学生信息</h2>
+  </div>
+</div>
+<%= render 'search_form'  %>
+<div class="ui blue segment">
+  <div class="ui grid">
+    <div class="left floated wide column">
+      <%= link_to new_admin_student_path, remote: true, class: 'ui primary button' do %>
+        <i class="plus icon"></i>新增学生
+      <% end %>
+    </div>
+  </div>
+  <table class="ui selectable striped celled table">
+    <thead>
+    <tr >
+      <th class="center aligned">身份证号</th>
+      <th class="center aligned">邮箱</th>
+      <th class="center aligned">姓名</th>
+      <th class="center aligned">手机</th>
+      <th class="center aligned">学号</th>
+      <th class="center aligned">学生状态</th>
+      <th class="center aligned">预约状态</th>
+      <th class="center aligned">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render partial: 'list', collection: @students, as: :student %>
+    </tbody>
+  </table>
+  <span class="blue">
+    <%= page_entries_info(@students) %>
+  </span>
+  <%= paginate(@students, :theme => 'admin')%>
+</div>
