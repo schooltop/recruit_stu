@@ -1,0 +1,28 @@
+<tr id="<%= ajax_bar_element_id(student_class) %>">
+  <td class="center aligned">
+    <span><%= student_class.name%></span>
+  </td>
+  <td class="center aligned">
+    <%=  student_class.time%>
+  </td>
+  <td class="center aligned">
+    <%= student_class.obj_type %>
+  </td>
+  <td class="center aligned">
+    <%= student_class.short_name %>
+  </td>
+  <td class="center aligned">
+    <%= student_class.status %>
+  </td>
+  <td class="center aligned">
+    <%= student_class.score_line %>
+  </td>
+  <td class="center aligned">
+    <%= student_class.comment %>
+  </td>
+  <td class="center aligned">
+    <%= link_to edit_admin_student_class_path(student_class), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
+      <i class="edit icon"></i>
+    <% end %>
+  </td>
+</tr>

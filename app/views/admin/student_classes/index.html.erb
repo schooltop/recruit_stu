@@ -1,0 +1,29 @@
+<div class="ui grid">
+  <div class="left floated fourteen wide column">
+    <h2>班级信息</h2>
+  </div>
+</div>
+<%= render 'search_form'  %>
+<div class="ui blue segment">
+  <table class="ui selectable striped celled table">
+    <thead>
+    <tr >
+      <th class="center aligned">班级</th>
+      <th class="center aligned">年级</th>
+      <th class="center aligned">年级类型</th>
+      <th class="center aligned">简称</th>
+      <th class="center aligned">班级状态</th>
+      <th class="center aligned">分数线</th>
+      <th class="center aligned">描述</th>
+      <th class="center aligned">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render partial: 'list', collection: @student_classes, as: :student_class %>
+    </tbody>
+  </table>
+  <span class="blue">
+    <%= page_entries_info(@student_classes) %>
+  </span>
+  <%= paginate(@student_classes, :theme => 'admin')%>
+</div>
