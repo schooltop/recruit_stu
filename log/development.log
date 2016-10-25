@@ -216,6 +216,7 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'recruit_stu_development'
   AND fk.table_name = 'written_scores'
 [0m
+<<<<<<< HEAD
 DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
 DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
 DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
@@ -631,6 +632,20 @@ rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
 rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
 actionpack (5.0.0.rc2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
 activerecord (5.0.0.rc2) lib/active_record/migration.rb:552:in `call'
+=======
+Started GET "/" for ::1 at 2016-10-24 15:22:58 +0800
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.rc2) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.rc2) lib/active_record/migration.rb:548:in `call'
+>>>>>>> dfce70dcb57ef7e59853ee434b48b21fdd5b4973
 actionpack (5.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
 activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
 activesupport (5.0.0.rc2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
@@ -660,6 +675,7 @@ actionpack (5.0.0.rc2) lib/action_dispatch/middleware/static.rb:136:in `call'
 rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
 railties (5.0.0.rc2) lib/rails/engine.rb:522:in `call'
 rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+<<<<<<< HEAD
 /Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
 /Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
 /Users/jamst/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -2270,3 +2286,243 @@ rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
   Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
   Rendered /Users/jamst/.rvm/gems/ruby-2.3.1@recruit_stu/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (15.3ms)
 DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /Users/jamst/workbook/recruit_stu/config/initializers/simple_form_semantic.rb:60)
+=======
+/Users/yuzhiyuan/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/yuzhiyuan/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/yuzhiyuan/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/yuzhiyuan/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/yuzhiyuan/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yuzhiyuan/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.4ms)
+  Rendering /Users/yuzhiyuan/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yuzhiyuan/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/yuzhiyuan/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yuzhiyuan/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/yuzhiyuan/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.6ms)
+  [1m[35m (63.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (172.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1207452200672133675', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20161024033503)
+  [1m[35m (85.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `name_en` varchar(255), `id_card` varchar(255), `email` varchar(255) DEFAULT '' NOT NULL, `mobile` varchar(255), `telephone` varchar(255), `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `is_valid` tinyint(1) DEFAULT 1, `status` int COMMENT '用户状态', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (83.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (91.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024033503')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRoles (20161024033616)
+  [1m[35m (106.0ms)[0m  [1m[35mCREATE TABLE `roles` (`id` int AUTO_INCREMENT PRIMARY KEY, `parent_id` int, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024033616')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePermissions (20161024033848)
+  [1m[35m (89.8ms)[0m  [1m[35mCREATE TABLE `permissions` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `action_tag` varchar(255), `function_tag` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024033848')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAttachments (20161024034058)
+  [1m[35m (82.0ms)[0m  [1m[35mCREATE TABLE `attachments` (`id` int AUTO_INCREMENT PRIMARY KEY, `path` varchar(255) COMMENT '附件文件名', `name` varchar(255) COMMENT '附件原文件名', `file_size` varchar(255) COMMENT '附件大小', `content_type` varchar(255) COMMENT '附件后缀名', `attachment_type` varchar(255) COMMENT '关联模块', `attachment_id` int COMMENT '关联模块ID', `upload_by` int COMMENT '上传人', `column_name` varchar(255) COMMENT '拓展字断', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024034058')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateStudents (20161024034251)
+  [1m[35m (81.8ms)[0m  [1m[35mCREATE TABLE `students` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `name_en` varchar(255), `id_card` varchar(255), `email` varchar(255) DEFAULT '' NOT NULL, `mobile` varchar(255), `telephone` varchar(255), `student_no` varchar(255), `status` int COMMENT '学生状态', `apply_status` int COMMENT '学生预约状态', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024034251')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateStudentClasses (20161024034343)
+  [1m[35m (90.8ms)[0m  [1m[35mCREATE TABLE `student_classes` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `time` varchar(255) COMMENT '年级：2016', `obj_type` varchar(255) COMMENT '年级类型：EMBA', `short_name` varchar(255) COMMENT '简称：E16', `status` int COMMENT '班级状态', `score_line` float COMMENT '分数线', `comment` text COMMENT '描述', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024034343')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateInterviewScores (20161024034558)
+  [1m[35m (135.0ms)[0m  [1m[35mCREATE TABLE `interview_scores` (`id` int AUTO_INCREMENT PRIMARY KEY, `student_id` int COMMENT '学生ID', `student_class_id` int COMMENT '学生班级ID', `score` float COMMENT '学生面试成绩', `score_order` int COMMENT '学生面试成绩排名', `interview_at` datetime COMMENT '学生面试时间', `show_at` datetime COMMENT '学生面试成绩公布时间', `status` int COMMENT '学生面试状态', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024034558')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateWrittenScores (20161024034643)
+  [1m[35m (129.3ms)[0m  [1m[35mCREATE TABLE `written_scores` (`id` int AUTO_INCREMENT PRIMARY KEY, `student_id` int COMMENT '学生ID', `student_class_id` int COMMENT '学生班级ID', `score` float COMMENT '学生笔试成绩', `score_order` int COMMENT '学生笔试成绩排名', `score_comment` varchar(255) COMMENT '学生笔试相关说明', `interview_at` datetime COMMENT '学生笔试时间', `show_at` datetime COMMENT '学生笔试成绩公布时间', `status` int COMMENT '学生笔试状态', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024034643')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateWrittenApplies (20161024034747)
+  [1m[35m (115.3ms)[0m  [1m[35mCREATE TABLE `written_applies` (`id` int AUTO_INCREMENT PRIMARY KEY, `student_id` int COMMENT '学生ID', `apply_set_id` int COMMENT '申请ID', `name` varchar(255) COMMENT '学生名字', `cat_no` varchar(255) COMMENT '学生名字', `status` int COMMENT '学生申请状态', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024034747')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAdmissionRecords (20161024035150)
+  [1m[35m (114.5ms)[0m  [1m[35mCREATE TABLE `admission_records` (`id` int AUTO_INCREMENT PRIMARY KEY, `student_id` int COMMENT '学生ID', `interview_score_id` int COMMENT '学生面试', `written_score_id` int COMMENT '学生笔试', `status` int COMMENT '学生录取状态', `comment` text COMMENT '描述', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024035150')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePermissionsRoles (20161024050854)
+  [1m[35m (90.4ms)[0m  [1m[35mCREATE TABLE `permissions_roles` (`id` int AUTO_INCREMENT PRIMARY KEY, `permission_id` int, `user_id` int,  INDEX `index_permissions_roles_on_permission_id`  (`permission_id`),  INDEX `index_permissions_roles_on_user_id`  (`user_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024050854')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRolesUsers (20161024051120)
+  [1m[35m (90.7ms)[0m  [1m[35mCREATE TABLE `roles_users` (`id` int AUTO_INCREMENT PRIMARY KEY, `role_id` int, `user_id` int,  INDEX `index_roles_users_on_role_id`  (`role_id`),  INDEX `index_roles_users_on_user_id`  (`user_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024051120')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateApplySets (20161024055745)
+  [1m[35m (89.8ms)[0m  [1m[35mCREATE TABLE `apply_sets` (`id` int AUTO_INCREMENT PRIMARY KEY, `student_class_id` int COMMENT '学生班级ID', `apply_at` datetime COMMENT '预约时间', `place_where` varchar(255) COMMENT '预约地点', `comment` text COMMENT '描述', `limit_menber` int COMMENT '学生人数限制', `status` int COMMENT '设置状态', `show_at` datetime COMMENT '开放时间', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161024055745')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-10-24 07:23:12', '2016-10-24 07:23:12')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1207452200672133675')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `admission_records`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'admission_records'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `apply_sets`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'apply_sets'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `attachments`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'attachments'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `interview_scores`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `permissions`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'permissions'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `permissions_roles`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `roles`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'roles'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `roles_users`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `student_classes`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'student_classes'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `students`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'students'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `written_applies`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'written_applies'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `written_scores`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'written_scores'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'admission_records'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'apply_sets'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'attachments'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'interview_scores'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'permissions'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'permissions_roles'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'roles'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'roles_users'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'student_classes'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'written_applies'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'recruit_stu_development'
+  AND fk.table_name = 'written_scores'
+[0m
+Started GET "/" for ::1 at 2016-10-24 15:23:18 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/yuzhiyuan/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.rc2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yuzhiyuan/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.rc2/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 15ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+>>>>>>> dfce70dcb57ef7e59853ee434b48b21fdd5b4973
