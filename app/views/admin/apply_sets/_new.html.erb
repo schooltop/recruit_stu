@@ -1,0 +1,24 @@
+<h2 class="ui dividing header">新增申请设置</h2>
+<%= simple_form_for [@apply_set], url: admin_apply_sets_path, method: :post, remote: true do |f| %>
+   <div class="two fields">
+      <%= f.input :student_class_id %>
+      <%= f.date_field :apply_at, value: Date.today %>
+    </div>
+    <div class="two fields">
+      <%= f.input :place_where %>
+      <%= f.input :comment%>
+    </div>
+    <div class="two fields">
+      <%= f.input :limit_menber %>
+      <%= f.input :status %>
+    </div>
+
+    <div class="two fields">
+      <%= f.date_field :show_at, value: Date.today %>
+    </div>
+    
+<% end %>
+<div class="actions">
+  <div class="ui button" onclick="javascript: $('#new_apply_set_modal').modal('hide')">取消</div>
+  <div class="ui blue button" onclick="javascript: $('#new_apply_set').submit();" >确定</div>
+</div>
