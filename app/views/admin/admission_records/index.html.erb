@@ -1,0 +1,27 @@
+<div class="ui grid">
+  <div class="left floated fourteen wide column">
+    <h2>录取结果</h2>
+  </div>
+</div>
+<%= render 'search_form'  %>
+<div class="ui blue segment">
+  <table class="ui selectable striped celled table">
+    <thead>
+    <tr >
+      <th class="center aligned">学生ID</th>
+      <th class="center aligned">学生面试</th>
+      <th class="center aligned">学生笔试</th>
+      <th class="center aligned">录取状态</th>
+      <th class="center aligned">描述</th>
+      <th class="center aligned">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render partial: 'list', collection: @admission_records, as: :admission_record%>
+    </tbody>
+  </table>
+  <span class="blue">
+    <%= page_entries_info(@admission_records) %>
+  </span>
+  <%= paginate(@admission_records, :theme => 'admin')%>
+</div>

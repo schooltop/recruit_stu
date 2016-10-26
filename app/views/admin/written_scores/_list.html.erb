@@ -1,0 +1,31 @@
+<tr id="<%= ajax_bar_element_id(written_score) %>">
+  <td class="center aligned">
+    <span><%= written_score.student_id%></span>
+  </td>
+  <td class="center aligned">
+    <%=  written_score.student_class_id%>
+  </td>
+  <td class="center aligned">
+    <%= written_score.score %>
+  </td>
+  <td class="center aligned">
+    <%= written_score.score_order %>
+  </td>
+  <td class="center aligned">
+    <%= written_score.score_comment %>
+  </td>
+  <td class="center aligned">
+    <%= written_score.interview_at %>
+  </td>
+  <td class="center aligned">
+    <%= written_score.show_at %>
+  </td>
+  <td class="center aligned">
+    <%= written_score.status %>
+  </td>
+  <td class="center aligned">
+    <%= link_to edit_admin_written_score_path(written_score), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
+      <i class="edit icon"></i>
+    <% end %>
+  </td>
+</tr>

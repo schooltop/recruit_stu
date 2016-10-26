@@ -1,0 +1,30 @@
+<div class="ui grid">
+  <div class="left floated fourteen wide column">
+    <h2>笔试信息</h2>
+  </div>
+</div>
+<%= render 'search_form'  %>
+<div class="ui blue segment">
+  <table class="ui selectable striped celled table">
+    <thead>
+    <tr >
+      <th class="center aligned">学生ID</th>
+      <th class="center aligned">班级ID</th>
+      <th class="center aligned">笔试成绩</th>
+      <th class="center aligned">笔试成绩排名</th>
+      <th class="center aligned">笔试相关说明</th>
+      <th class="center aligned">笔试时间</th>
+      <th class="center aligned">笔试成绩公布时间</th>
+      <th class="center aligned">笔试状态</th>
+      <th class="center aligned">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render partial: 'list', collection: @written_scores, as: :written_score %>
+    </tbody>
+  </table>
+  <span class="blue">
+    <%= page_entries_info(@written_scores) %>
+  </span>
+  <%= paginate(@written_scores, :theme => 'admin')%>
+</div>

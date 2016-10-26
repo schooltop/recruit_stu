@@ -10,6 +10,10 @@ Rails.application.routes.draw do
     resources :users
     resources :students
     resources :student_classes
+    resources :interview_scores
+    resources :written_scores
+    resources :written_applies
+    resources :admission_records
   end
 
 end

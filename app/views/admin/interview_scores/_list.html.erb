@@ -1,0 +1,28 @@
+<tr id="<%= ajax_bar_element_id(interview_score) %>">
+  <td class="center aligned">
+    <span><%= interview_score.student_id%></span>
+  </td>
+  <td class="center aligned">
+    <%=  interview_score.student_class_id%>
+  </td>
+  <td class="center aligned">
+    <%= interview_score.score %>
+  </td>
+  <td class="center aligned">
+    <%= interview_score.score_order %>
+  </td>
+  <td class="center aligned">
+    <%= interview_score.interview_at %>
+  </td>
+  <td class="center aligned">
+    <%= interview_score.show_at %>
+  </td>
+  <td class="center aligned">
+    <%= interview_score.status %>
+  </td>
+  <td class="center aligned">
+    <%= link_to edit_admin_interview_score_path(interview_score), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
+      <i class="edit icon"></i>
+    <% end %>
+  </td>
+</tr>
