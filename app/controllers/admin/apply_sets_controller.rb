@@ -35,6 +35,7 @@ class Admin::ApplySetsController < Admin::BaseController
                                      :comment,
                                      :limit_menber,
                                      :status,
-                                     :show_at)
+                                     :show_at,
+                                     :end_apply_at)
   end
 end

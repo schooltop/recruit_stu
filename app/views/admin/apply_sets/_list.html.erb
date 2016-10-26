@@ -3,7 +3,10 @@
     <span><%= apply_set.student_class_id%></span>
   </td>
   <td class="center aligned">
-    <%=  apply_set.apply_at%>
+    <%=  apply_set.apply_at.strftime('%Y-%m-%d')%>
+  </td>
+  <td class="center aligned">
+    <%=  apply_set.end_apply_at.strftime('%Y-%m-%d')%>
   </td>
   <td class="center aligned">
     <%= apply_set.place_where %>
@@ -15,10 +18,10 @@
     <%= apply_set.limit_menber %>
   </td>
   <td class="center aligned">
-    <%= apply_set.status %>
+    <%= apply_set.status.to_s == "0" ? "关闭" : "开启" %>
   </td>
   <td class="center aligned">
-    <%= apply_set.show_at %>
+    <%= apply_set.show_at.strftime('%Y-%m-%d') %>
   </td>
   <td class="center aligned">
     <%= link_to edit_admin_apply_set_path(apply_set), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
