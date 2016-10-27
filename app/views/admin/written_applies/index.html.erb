@@ -5,13 +5,20 @@
 </div>
 <%= render 'search_form'  %>
 <div class="ui blue segment">
+  <div class="ui grid">
+    <div class="left floated wide column">
+      <%= link_to new_admin_written_apply_path, remote: true, class: 'ui primary button' do %>
+        <i class="plus icon"></i>新增笔试申请
+      <% end %>
+    </div>
+  </div>
   <table class="ui selectable striped celled table">
     <thead>
     <tr >
       <th class="center aligned">学生ID</th>
       <th class="center aligned">申请ID</th>
       <th class="center aligned">名字</th>
-      <th class="center aligned">学号</th>
+      <th class="center aligned">车号</th>
       <th class="center aligned">申请状态</th>
       <th class="center aligned">操作</th>
     </tr>
