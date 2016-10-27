@@ -5,5 +5,17 @@ class Admin::AdmissionRecordsController < Admin::BaseController
 	    search_params = @q.attributes(self)
 	    @admission_records = AdmissionRecord.default_where(search_params).page(params[:page]).per(10)
 	end
+
+	def import_admission_record
+
+	end
+
+	def create_import_admission_record
+
+    end
+
+	def export_admission_record
+
+	end
 	
 end

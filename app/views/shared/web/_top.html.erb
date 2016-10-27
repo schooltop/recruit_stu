@@ -4,11 +4,11 @@
 	            <div class="nav-btn" ><img src="/mybimba.png" width="90px" height="45px" alt="BIMBA"></div>
 	            <div class="home-btn"><a href="/bimba" title="BIMBA">BIMBA</a></div>
 				<div id="welcome">
-				<font color="#DDDDDD"><%= t("welcome") %>, 
+				<font color="#DDDDDD"><%= "欢迎" %>, 
 				<strong>
 	                <%= current_user.name %>
 				</strong> 
-				    [ <a href="/logout" class="utilsLink"><%= t("logout")%></a> ]
+				    [ <a href="/logout" class="utilsLink"><%= "登出" %></a> ]
 				</font>
 				</div>
 	     </div>
@@ -24,7 +24,7 @@
 					<li class="home">
 						<div class="title">
 							<span class="icon">Home</span>
-							<div class="name"><a href="/bimba" title="MyBiMBA">MyBiMBA</a></div>
+							<div class="name"><a href="/dashboards" title="MyBiMBA">MyBiMBA</a></div>
 							<span class="arrow" name="arrow">Arrow</span>
 						</div>
 					</li>
@@ -32,7 +32,7 @@
 	                <li class="about" id=957>
 						<div class="title">
 							<span class="icon">About</span>
-							<div class="name"><a href="/bimba" title="招生">招生</a></div>
+							<div class="name"><a href="/dashboards" title="招生">招生</a></div>
 							<span class="arrow" name="arrow">Arrow</span>
 						</div>
 
@@ -55,11 +55,11 @@
 				<h1 class="logo"><a href="/bimba" title="BIMBA"><img src="http://img.bimba.edu.cn/res/bimba_cn2/images/header/brand/bimba.png" alt="BIMBA"></a></h1>
 			</div>
 			<div id="min_welcome">
-			    <%= t("welcome") %>, 
+			    <%= "欢迎" %>, 
 			    <strong>
 	              <%= current_user.name %>
 			    </strong> 
-			    [ <a href="/logout" class=""><%= t("logout")%></a> ]
+			    [ <a href="/logout" class=""><%= "登出" %></a> ]
 			</div>
 		</div>
      </div>
@@ -67,11 +67,11 @@
 
     <div class="nav-assist">
     	<div id="ming_welcome">
-			    <%= t("welcome") %>, 
+			    <%= "欢迎" %>, 
 			    <strong>
                   <%= current_user.name %>
 			    </strong> 
-			    [ <a href="/logout" class=""><%= t("logout")%></a> ]
+			    [ <a href="/logout" class=""><%= "登出" %></a> ]
 	    </div>
 		<ul class="list">
 			    <%#= minit_title_select t("personal_information"),"/porsonal_inf" %>
@@ -85,7 +85,7 @@
              <ul class="list">
                 <li><a href="/bimba" title="MyBiMBA">BiMBA招生</a></li>
                 <%if session[:top_tab_tipe] %>
-                <li><a href="<%=session[:left_tab]%>" target="_self" title="<%= session[:top_tab_tipe] %>"><%= t(session[:top_tab_tipe].to_s) %></a>
+                <li><a href="<%=session[:left_tab]%>" target="_self" title="<%= session[:top_tab_tipe] %>"><%= session[:top_tab_tipe].to_s %></a>
                 </li>
                 <% end %>
             </ul>

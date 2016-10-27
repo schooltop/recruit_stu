@@ -1,0 +1,51 @@
+
+<div align="center">
+
+ <style>
+      .print td{border-top:1px black solid;border-right:1px black solid;border-bottom:1px black solid;border-left:1px black solid;}
+      .print{border-top:0px black solid;border-right:0px black solid;border-bottom:0px black solid;border-left:0px black solid;}
+      .print1 td{border-top:1px black solid;border-right:1px black solid; border-bottom:0px black solid;border-left:0px black solid;}
+      .print1{margin-top:3px; margin-left:3px;margin-bottom:3px; margin-right:3px;border-top:0px black solid;border-right:0px black solid; border-bottom:1px black solid;border-left:1px black solid;}
+      <%if params[:print] || params[:pdf] %>
+          body{background-color: #dddddd;background-image:url("/images/shuiyin.png");
+          background-repeat:no-repeat;background-size:80%; }
+      <% end %>
+      #date{ float:right;}
+      .biaoti{font-family:"Times New Roman";font-size:18px}
+      .title{font-family:"Times New Roman";font-size:15px}
+      .time{font-family:"Times New Roman";font-size:14px}
+   </style>
+
+   <div style="width:100%" align="center"> 
+      <div style="float:left"><img src="/images/facebook.png" width="104px" height="28px" /></div>
+      <div align="center" class="biaoti" >
+          <h2>
+             <%= @student.name %> 面试成绩
+          </h2>
+      </div>  
+   </div>
+   <% if @interview_score.present? %>
+
+   <table class="print1" width="100%"  align="center" cellpadding="0" cellspacing="0" style ="font-size: 62.5%;" > 
+
+      <tr>
+        <td width="25%" height="30" align="center" class="title"><b>姓名</b></td>
+        <td align="center" height="30" width="10%" class="title"><b>成绩</b></td>  
+      </tr>
+
+      <tr>
+          <td align="left" width="260" style="padding-left:5px" ><%= @student.name %></td>      
+          <td align="center" width="60"><%= @interview_score.score %></td>
+      </tr>
+
+   </table>
+
+   <%if @interview_score.status == 1 %>
+     <b>恭喜您通过北大国发院的面试，获得条件录取。</b>
+   <%elsif @interview_score.status == 1 %>
+     <b>抱歉告知您，未能通过北大国发院的面试，未能拿到条件录取资格。</b>
+   <% end %>
+   <% else %>
+     <b>目前面试成绩暂不能查询。</b>
+   <% end %>
+  </div>

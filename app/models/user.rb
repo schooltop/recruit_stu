@@ -6,7 +6,16 @@ class User < ApplicationRecord
     1==1
   end
 
+  def is_worker?
+    1==1
+    # self.roles.include? 2
+  end
+
   def add_log(notice,ip)
 
+  end
+
+  def student
+    student.find_by(email:self.email)
   end
 end

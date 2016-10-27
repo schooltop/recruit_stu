@@ -1,0 +1,30 @@
+<%if @worker %>
+  
+   欢迎您登录北大国发院成绩查询及笔试辅导预约系统管理后台。
+
+<% else %>
+  
+   <%= @student.name %>考生，
+
+		欢迎您登陆北大国发院成绩查询及笔试辅导预约系统。
+
+		请您选择需要查询的事项。
+
+   <%= link_to web_interview_scores_path, remote: true, data: {content: '面试成绩查询', variation: 'inverted'}, class: 'ui blue icon button' do %>
+      <i class="edit icon"></i>
+    <% end %>
+
+
+    <%= link_to web_written_applies_path, remote: true, data: {content: '笔试辅导预约', variation: 'inverted'}, class: 'ui blue icon button' do %>
+      <i class="edit icon"></i>
+    <% end %>
+
+    <%= link_to web_written_scores_path, remote: true, data: {content: '笔试成绩查询', variation: 'inverted'}, class: 'ui blue icon button' do %>
+      <i class="edit icon"></i>
+    <% end %>
+
+    <%= link_to web_admission_records_path, remote: true, data: {content: '录取结果查询', variation: 'inverted'}, class: 'ui blue icon button' do %>
+      <i class="edit icon"></i>
+    <% end %>
+    
+<% end %>
