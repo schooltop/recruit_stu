@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     resources :written_scores
     resources :written_applies
     resources :admission_records
+    resources :apply_sets
   end
 
 end

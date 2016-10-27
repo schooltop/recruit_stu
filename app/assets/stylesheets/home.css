@@ -1,0 +1,14 @@
+
+.time_wraper{
+  margin-left: 6px;
+  margin-top: 2px;
+}
+.time_wraper label {
+  font-weight:bold;
+}
+.radio_wraper{
+  height: 20px;
+  line-height: 35px;
+  margin-right: 20px;
+  margin-left: 5px;
+}
