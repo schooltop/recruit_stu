@@ -2,8 +2,8 @@ class Admin::WrittenAppliesController < Admin::BaseController
 	before_action :set_written_apply, only: [:edit, :update]
 	def index
 		@q = SearchParams.new(params[:search_params] || {})
-	    search_params = @q.attributes(self)
-	    @written_applies = WrittenApply.default_where(search_params).page(params[:page]).per(10)
+    search_params = @q.attributes(self)
+    @written_applies = WrittenApply.preload(:student).default_where(search_params).page(params[:page]).per(10)
 	end
 
 	def new
