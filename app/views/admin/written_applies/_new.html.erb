@@ -1,0 +1,32 @@
+<h2 class="ui dividing header">新增笔试申请</h2>
+<%= simple_form_for [@written_apply], url: admin_written_applies_path, method: :post, remote: true do |f| %>
+  <div id="form_message">
+   
+  </div>
+   <div class="one field">
+      <%= label_tag 'name', '姓名:'%>
+      <%= text_field_tag 'name', @current_student.name%>
+    </div>
+
+     <div class="one field">
+      <%= label_tag 'mobile', '电话:'%>
+      <%= text_field_tag 'mobile', @current_student.mobile%>
+    </div>
+
+     <div class="one field">
+      <%= label_tag 'email', '邮箱:'%>
+      <%= text_field_tag 'email', @current_student.email%>
+    </div>
+    <div class="one field">
+      <%= f.input :cat_no%>
+      <%= f.hidden_field :student_id,value: @current_student.id%>
+    </div>
+    <div class="one field">
+      <%= label_tag 'time', '笔试辅导时间:'%>
+      <%= f.select :apply_set_id, apply_set_options %>
+    </div>
+<% end %>
+<div class="actions">
+  <div class="ui button" onclick="javascript: $('#new_written_apply_modal').modal('hide')">取消</div>
+  <div class="ui blue button" onclick="javascript: $('#new_written_apply').submit();" >确定</div>
+</div>

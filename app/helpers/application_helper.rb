@@ -7,5 +7,7 @@ module ApplicationHelper
       'ui negative message'
     end
   end
-  
+  def apply_set_options
+  	ApplySet.show_records.map{|m|[m.comment,m.id]}
+  end
 end
