@@ -1,0 +1,7 @@
+<% if @error_message %> 
+  $("#form_message").text("<%= @error_message %>"); 
+  $("#form_message").show(200); 
+<% else %> 
+  $('#edit_written_apply_modal').modal('hide'); 
+  $('#edit_written_apply_modal').remove(); 
+<% end %>

@@ -11,15 +11,42 @@ class Admin::WrittenAppliesController < Admin::BaseController
     @current_student = Student.first
   end
 
-  def create
-    @written_apply = WrittenApply.create(written_apply_params)
+  def create  
+    respond_to do |format|
+      if written_apply_params[:apply_set_id].blank?
+        @error_message = "请选择笔试辅导时间段"
+      else
+        apply_set = ApplySet.find(written_apply_params[:apply_set_id])
+        if apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count
+          apply_set.update(status: 0)
+          @error_message = "笔试辅导人数已超过上线"
+        else
+          @written_apply = WrittenApply.create(written_apply_params)
+        end
+      end
+      format.js
+    end
   end
 
   def edit
+    @current_student = Student.first
   end
 
   def update
-    @written_apply.update(written_apply_params)
+    respond_to do |format|
+      if written_apply_params[:apply_set_id].blank?
+        @error_message = "请选择笔试辅导时间段"
+      else
+        apply_set = ApplySet.find(written_apply_params[:apply_set_id])
+        if apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count
+          apply_set.update(status: 0)
+          @error_message = "笔试辅导人数已超过上线"
+        else
+          @written_apply.update(written_apply_params)
+        end
+      end
+      format.js
+    end   
   end
 	
 	private
