@@ -8,12 +8,28 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :users
-    resources :students
+    resources :students do
+      get :import_student
+      post :create_import_student
+      get :export_student
+    end
     resources :student_classes
-    resources :interview_scores
-    resources :written_scores
+    resources :interview_scores do
+      get :import_interview_score
+      post :create_import_interview_score
+      get :export_interview_score
+    end
+    resources :written_scores do
+      get :import_written_score
+      post :create_import_written_score
+      get :export_written_score
+    end
+    resources :admission_records do
+      get :import_admission_record
+      post :create_import_admission_record
+      get :export_admission_record
+    end
     resources :written_applies
-    resources :admission_records
     resources :apply_sets
   end
 
