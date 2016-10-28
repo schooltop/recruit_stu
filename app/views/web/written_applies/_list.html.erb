@@ -1,20 +1,20 @@
 <tr id="<%= ajax_bar_element_id(written_apply) %>">
-  <td class="center aligned">
+  <td align="center">
     <span><%= written_apply.student_id%></span>
   </td>
-  <td class="center aligned">
+  <td align="center">
     <%=  written_apply.apply_set_id%>
   </td>
-  <td class="center aligned">
+  <td align="center">
     <%= written_apply.student.name %>
   </td>
-  <td class="center aligned">
+  <td align="center">
     <%= written_apply.cat_no %>
   </td>
-  <td class="center aligned">
+  <td align="center">
     <%= written_apply.status %>
   </td>
-  <td class="center aligned">
+  <td align="center">
     <%= link_to '编辑', edit_web_written_apply_path(written_apply) %>
     <i class="edit icon"></i>
   </td>

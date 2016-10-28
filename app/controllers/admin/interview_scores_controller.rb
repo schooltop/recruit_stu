@@ -58,7 +58,7 @@ class Admin::InterviewScoresController < Admin::BaseController
 	    interview_scores.each_with_index do |interview_score,index|
 	      list[index+1,0] = interview_score.student.mobile
 	      list[index+1,1] = interview_score.student.name
-	      list[index+1,2] = interview_score.score
+	      list[index+1,2] = interview_score.score.round(2)
 	      list[index+1,3] = interview_score.score_order
 	    end
 	    xls_report = StringIO.new

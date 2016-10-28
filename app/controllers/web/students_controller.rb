@@ -11,7 +11,7 @@ class Web::StudentsController < Web::BaseController
   def user_edit_self
     @user = current_user
   end
-
+  
   def update_password
     if params[:user][:id].to_i == current_user.id
       if params[:user][:password]==params[:user][:password_confirmation]

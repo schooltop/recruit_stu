@@ -67,4 +67,5 @@ class Admin::WrittenAppliesController < Admin::BaseController
   def is_limit_up? apply_set
     apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count && @written_apply.apply_set_id.to_s != written_apply_params[:apply_set_id].to_s
   end
+  
 end

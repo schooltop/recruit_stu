@@ -15,7 +15,7 @@ class Web::WrittenAppliesController < Web::BaseController
 	end
 
 	def edit
-
+     redirect_to root_path  if @written_apply.student_id != @student.id 
   end
 
   def create  
@@ -39,7 +39,6 @@ class Web::WrittenAppliesController < Web::BaseController
     end
   end
 
-  
 
   def update
     if written_apply_params[:apply_set_id].blank?

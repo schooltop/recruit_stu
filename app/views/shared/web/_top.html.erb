@@ -8,7 +8,7 @@
 				<strong>
 	                <%= current_user.name %>
 				</strong> 
-				    [<%= link_to '登出', destroy_user_session_path, { method: :delete} %>]
+				    [<%= link_to "登出", destroy_user_session_path, :method => :get  %>]
 				</font>
 				</div>
 	     </div>
@@ -59,7 +59,7 @@
 			    <strong>
 	              <%= current_user.name %>
 			    </strong> 
-			    [<%= link_to '登出', destroy_user_session_path, { method: :delete} %>]
+			    [<%=link_to "登出", destroy_user_session_path, :method => :get  %>]
 			</div>
 		</div>
      </div>
@@ -71,7 +71,7 @@
 			    <strong>
                   <%= current_user.name %>
 			    </strong> 
-			    [<%= link_to '登出', destroy_user_session_path, { method: :delete} %>]
+			    [<%= link_to "登出", destroy_user_session_path, :method => :get  %>]
 	    </div>
 		<ul class="list">
 			    <%= raw minit_title_select  "个人信息","/web/students/porsonal_inf" %>
