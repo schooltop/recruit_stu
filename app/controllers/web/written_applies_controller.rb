@@ -3,6 +3,7 @@ class Web::WrittenAppliesController < Web::BaseController
 	def index
 	   @student = current_user.student
 	   @written_applies = WrittenApply.preload(:student).default_where(student_id:@student.id)
+     redirect_to :new unless @written_applies.blank?
 	end
 
 	def new
