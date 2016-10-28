@@ -2,7 +2,7 @@
 <%= simple_form_for [@student], url: admin_student_path, method: :put, remote: true do |f| %>
     <div class="two fields">
       <%= f.input :name, required: false %>
-      <%= f.input :email %>
+      <%= f.input :name_en %>
     </div>
     <div class="two fields">
       <%= f.input :id_card %>
@@ -10,7 +10,7 @@
     </div>
     <div class="two fields">
       <%= f.input :mobile %>
-      <%= f.input :telephone %>
+      <%= f.input :email %>
     </div>
 <% end %>
 <div class="actions">
