@@ -15,8 +15,7 @@
     <%= written_apply.status %>
   </td>
   <td class="center aligned">
-    <%= link_to edit_web_written_apply_path(written_apply), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
-      <i class="edit icon"></i>
-    <% end %>
+    <%= link_to '编辑', edit_web_written_apply_path(written_apply) %>
+    <i class="edit icon"></i>
   </td>
 </tr>

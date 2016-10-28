@@ -1,16 +1,14 @@
-<div class="ui grid">
+<div class="ui grid" style="margin-left:100px">
   <div class="left floated fourteen wide column">
     <h2>申请信息</h2>
   </div>
 </div>
+<%= stylesheet_link_tag 'bootstrap_custom', media: 'all'%>
 <%= render 'search_form'  %>
-<div class="ui blue segment">
+<div class="ui blue segment" style="margin-left:100px">
   <div class="ui grid">
     <div class="left floated wide column">
     <%if @student.written_apply %>
-      <%= link_to edit_web_written_apply_path(@student.written_apply.id), remote: true, class: 'ui primary button' do %>
-        <i class="plus icon"></i>修改笔试申请
-      <% end %>
     <% else %>
       <%= link_to new_web_written_apply_path, remote: true, class: 'ui primary button' do %>
         <i class="plus icon"></i>新增笔试申请
@@ -18,7 +16,7 @@
     <% end %>  
     </div>
   </div>
-  <table class="ui selectable striped celled table">
+  <table class="table table-bordered table-hover"  cellspacing="0" width="100%" > 
     <thead>
     <tr >
       <th class="center aligned">学生ID</th>

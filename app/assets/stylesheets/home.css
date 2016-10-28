@@ -19,3 +19,25 @@
   border: 1px solid transparent;
   border-radius: 4px;
 }
+.form-part{
+  margin-bottom:10px;
+}
+.form-part input[type=text]{
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 34px;
+    line-height: 34px;
+    width: 300px;
+}
+.form-part select{
+  width: 300px;
+  font-size: 16px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.form-part label{
+  width: 100px;
+  text-align: left;
+}
