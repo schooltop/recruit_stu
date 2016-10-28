@@ -23,7 +23,6 @@
 <%= simple_form_for [@written_apply], url: web_written_applies_path, method: :post, remote: true do |f| %>
   <% if @written_apply.errors.any? %>
     <div class="alert alert-danger" role="alert">
-      <h3>保存时有<%= @account.errors.count %>个错误:</h3>
       <ul>
       <% @written_apply.errors.full_messages.each do |message| %>
         <li><%= message %></li>

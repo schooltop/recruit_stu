@@ -1,7 +1,7 @@
-<% if @error_message %> 
-  $("#form_message").text("<%= @error_message %>"); 
-  $("#form_message").show(200); 
+<% if @written_apply.errors.any? %>
+		$("#form_message").text("<%= @written_apply.errors.full_messages[0].sub(/Msg/,'') %>"); 
+		$("#form_message").show(200); 
 <% else %> 
-  $('#edit_written_apply_modal').modal('hide'); 
+  $('#edit_written_apply_modal').modal('hide').fadeOut(5000); 
   $('#edit_written_apply_modal').remove(); 
 <% end %>

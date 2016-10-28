@@ -1,6 +1,7 @@
+<%= stylesheet_link_tag 'home', media: 'all'%>
 <h2 class="ui dividing header">新增笔试申请</h2>
 <%= simple_form_for [@written_apply], url: admin_written_applies_path, method: :post, remote: true do |f| %>
-  <div id="form_message">
+  <div class="alert-error" id="form_message" style="display:none">
    
   </div>
    <div class="one field">
