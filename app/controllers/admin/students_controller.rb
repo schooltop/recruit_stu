@@ -13,6 +13,19 @@ class Admin::StudentsController < Admin::BaseController
 
   def create
     @student = Student.create(student_params)
+
+    user = User.find_by(email: @student.email)
+    if user.blank?
+      user = User.new
+      user.password =  @student.id_card.to_s.upcase
+    end
+    user.name = @student.name
+    user.name_en = @student.name_en
+    user.id_card = @student.id_card.to_s.upcase
+    user.email = @student.email
+    user.mobile = @student.mobile
+    user.status = 1
+    user.save
   end
 
   def edit
@@ -76,7 +89,7 @@ class Admin::StudentsController < Admin::BaseController
     search_date = Time.now
     file = Spreadsheet.open "#{Rails.root}/public/xls/students.xls"
     list = file.worksheet  0
-    students = Stuednt.all
+    students = Student.all
     students.each_with_index do |student,index|
       list[index+1,0] = student.id
       list[index+1,1] = student.mobile

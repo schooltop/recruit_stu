@@ -3,12 +3,15 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   def is_active?
-    1==1
+    self.status.to_i == 1
   end
 
   def is_worker?
-    1==1
-    # self.roles.include? 2
+    self.role_id.to_i == 2
+  end
+
+  def is_student?
+    self.role_id.to_i != 2
   end
 
   def add_log(notice,ip)
@@ -18,4 +21,5 @@ class User < ApplicationRecord
   def student
     Student.find_by(email:self.email)
   end
+  
 end
