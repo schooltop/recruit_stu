@@ -21,9 +21,16 @@
 3. 如果您开车进校面试，请在下方“车辆预约”处填写您的车牌号，并于当天从东北门入校。
 
 <%= simple_form_for [@written_apply], url: web_written_applies_path, method: :post, remote: true do |f| %>
-  <div id="form_message">
-   
-  </div>
+  <% if @written_apply.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+      <h3>保存时有<%= @account.errors.count %>个错误:</h3>
+      <ul>
+      <% @written_apply.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
    <div class="one field">
       <%= label_tag 'name', '姓名:'%>
       <%= text_field_tag 'name', @student.name%>
