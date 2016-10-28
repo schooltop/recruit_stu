@@ -38,7 +38,8 @@ class Admin::UsersController < Admin::BaseController
                                      :password_confirmation,
                                      :mobile,
                                      :telephone,
-                                     :role_id)
+                                     :role_id,
+                                     :status)
   end
 
 end
