@@ -10,4 +10,7 @@ module ApplicationHelper
   def apply_set_options
   	ApplySet.show_records.map{|m|[m.comment,m.id]}
   end
+
+  include SendMenu
+  
 end

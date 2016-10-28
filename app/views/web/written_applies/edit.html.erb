@@ -20,7 +20,6 @@
 3. 如果您开车进校面试，请在下方“车辆预约”处填写您的车牌号，并于当天从东北门入校。
 
 <%= simple_form_for [@written_apply], url: web_written_apply_path, method: :put do |f| %>
-  <%= f.input :reset_password_token, :as => :hidden %>
   <% if @written_apply.errors.any? %>
     <div class="alert alert-danger" role="alert">
       <ul>
