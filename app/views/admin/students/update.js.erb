@@ -1,0 +1,5 @@
+$('#edit_student_modal').modal('hide').fadeOut(5000); 
+$('#edit_student_modal').remove(); 
+$("#student_<%= @student.id %>").replaceWith("<%= j(render partial: 'list', locals: { student: @student} ) %>");
+$(".button").popup();
+$(".icon").popup();

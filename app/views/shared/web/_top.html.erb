@@ -2,13 +2,13 @@
 	    <div class="top-box-outer">
 	    <div class="top-box-inner">
 	            <div class="nav-btn" ><img src="/mybimba.png" width="90px" height="45px" alt="BIMBA"></div>
-	            <div class="home-btn"><a href="/dashboards" title="BIMBA">BIMBA</a></div>
+	            <div class="home-btn"><a href="/" title="BIMBA">BIMBA</a></div>
 				<div id="welcome">
 				<font color="#DDDDDD"><%= "欢迎" %>, 
 				<strong>
 	                <%= current_user.name %>
 				</strong> 
-				    [ <a href="/logout" class="utilsLink"><%= "登出" %></a> ]
+				    [<%= link_to '登出', destroy_user_session_path, { method: :delete} %>]
 				</font>
 				</div>
 	     </div>
@@ -24,7 +24,7 @@
 					<li class="home">
 						<div class="title">
 							<span class="icon">Home</span>
-							<div class="name"><a href="/dashboards" title="MyBiMBA">MyBiMBA</a></div>
+							<div class="name"><a href="/" title="MyBiMBA">MyBiMBA</a></div>
 							<span class="arrow" name="arrow">Arrow</span>
 						</div>
 					</li>
@@ -32,13 +32,13 @@
 	                <li class="about" id=957>
 						<div class="title">
 							<span class="icon">About</span>
-							<div class="name"><a href="/dashboards" title="招生">招生</a></div>
+							<div class="name"><a href="/" title="招生">招生</a></div>
 							<span class="arrow" name="arrow">Arrow</span>
 						</div>
 
 	                    <ul class="nav-list">
-						    <%#= top_title_select t("personal_information"),"/porsonal_inf" %>
-	                        <%#= top_title_select t("change_password"),"/user_edit_self" %>
+						    <%= raw top_title_select "个人信息","/web/students/porsonal_inf" %>
+	                        <%= raw top_title_select "修改密码","/web/students/user_edit_self" %>
 	                    </ul>
 					</li>
 
@@ -52,14 +52,14 @@
       <div class="header-outer">
 		<div class="header-inner">
 			<div class="brand">
-				<h1 class="logo"><a href="/bimba" title="BIMBA"><img src="http://img.bimba.edu.cn/res/bimba_cn2/images/header/brand/bimba.png" alt="BIMBA"></a></h1>
+				<h1 class="logo"><a href="/" title="BIMBA"><img src="http://img.bimba.edu.cn/res/bimba_cn2/images/header/brand/bimba.png" alt="BIMBA"></a></h1>
 			</div>
 			<div id="min_welcome">
 			    <%= "欢迎" %>, 
 			    <strong>
 	              <%= current_user.name %>
 			    </strong> 
-			    [ <a href="/logout" class=""><%= "登出" %></a> ]
+			    [<%= link_to '登出', destroy_user_session_path, { method: :delete} %>]
 			</div>
 		</div>
      </div>
@@ -71,11 +71,11 @@
 			    <strong>
                   <%= current_user.name %>
 			    </strong> 
-			    [ <a href="/logout" class=""><%= "登出" %></a> ]
+			    [<%= link_to '登出', destroy_user_session_path, { method: :delete} %>]
 	    </div>
 		<ul class="list">
-			    <%#= minit_title_select t("personal_information"),"/porsonal_inf" %>
-                <%#= minit_title_select t("change_password"),"/user_edit_self" %>
+			    <%= raw minit_title_select  "个人信息","/web/students/porsonal_inf" %>
+                <%= raw minit_title_select  "修改密码","/web/students/user_edit_self" %>
 		</ul>
 	</div>
 
@@ -83,7 +83,7 @@
     <div class="breadcrumb">
         <div class="breadcrumb-inner">
              <ul class="list">
-                <li><a href="/bimba" title="MyBiMBA">BiMBA招生</a></li>
+                <li><a href="/" title="MyBiMBA">BiMBA招生</a></li>
                 <%if session[:top_tab_tipe] %>
                 <li><a href="<%=session[:left_tab]%>" target="_self" title="<%= session[:top_tab_tipe] %>"><%= session[:top_tab_tipe].to_s %></a>
                 </li>

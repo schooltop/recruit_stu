@@ -7,13 +7,8 @@
 <div class="ui blue segment">
   <a class="ui primary button" href="<%=import_student_admin_students_path%>"><i class="upload icon"></i>导入学生</a> 
   <a class="ui primary button" href="<%=export_student_admin_students_path%>"><i class="download icon"></i>导出学生</a> 
-  <div class="ui grid">
-    <div class="left floated wide column">
-      <%= link_to new_admin_student_path, remote: true, class: 'ui primary button' do %>
-        <i class="plus icon"></i>新增学生
-      <% end %>
-    </div>
-  </div>
+  <a class="ui primary button" href="<%=new_admin_student_path%>" data-remote="true" ><i class="plus icon"></i>新增学生</a> 
+  
   <table class="ui selectable striped celled table">
     <thead>
     <tr >
