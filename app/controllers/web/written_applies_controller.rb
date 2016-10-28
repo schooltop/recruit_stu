@@ -20,49 +20,52 @@ class Web::WrittenAppliesController < Web::BaseController
 
   def create  
     @written_apply = WrittenApply.new(written_apply_params)
-    respond_to do |format|
-      if written_apply_params[:apply_set_id].blank?
-        @written_apply.errors[:msg] = "请选择笔试辅导时间段"
-        format.html {render :new}
-      else
-        apply_set = ApplySet.find(written_apply_params[:apply_set_id])
-        if apply_set.limit_menber <= WrittenApply.record_by_apply_set_id(apply_set.id).count
-          apply_set.update(status: 0)
-          @written_apply.errors[:msg] = "笔试辅导人数已超过上线"
-          format.html {render :new}
-        elsif @student.written_apply
-          @written_apply.errors[:msg] = "已存在申请记录"
-          format.html {render :new}
-        else 
-          if @written_apply.save
-            format.html {redirect_to web_written_applies_url, notice: '创建成功.'}
-          end
+    if written_apply_params[:apply_set_id].blank?
+      @written_apply.errors[:msg] = "请选择笔试辅导时间段"
+      render action: 'new'
+    else
+      apply_set = ApplySet.find(written_apply_params[:apply_set_id])
+      if apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count
+        apply_set.update(status: 0)
+        @written_apply.errors[:msg] = "笔试辅导人数已超过上线"
+        render action: 'new'
+      else 
+        if @written_apply.save
+          redirect_to web_written_applies_url
+        else
+          render action: 'new'
         end
       end
     end
   end
 
+  
+
   def update
-    respond_to do |format|
-      if written_apply_params[:apply_set_id].blank?
-        @written_apply.errors[:msg] = "请选择笔试辅导时间段"
-        format.html { render :edit }
+    if written_apply_params[:apply_set_id].blank?
+      @written_apply.errors[:msg] = "请选择笔试辅导时间段"
+      render action: 'edit'
+    else
+      apply_set = ApplySet.find(written_apply_params[:apply_set_id])
+      if is_limit_up?(apply_set) 
+        apply_set.update(status: 0)
+        @written_apply.errors[:msg] = "笔试辅导人数已超过上线"
+        render action: 'edit'
       else
-        apply_set = ApplySet.find(written_apply_params[:apply_set_id])
-        if apply_set.limit_menber <= WrittenApply.record_by_apply_set_id(apply_set.id).count
-          apply_set.update(status: 0)
-          @written_apply.errors[:msg] = "笔试辅导人数已超过上线"
-          format.html { render :edit }
+        if @written_apply.update(written_apply_params)
+         redirect_to web_written_applies_url
         else
-         if @written_apply.update(written_apply_params)
-           format.html {redirect_to web_written_applies_url, notice: '更新成功.'}
-         end
+          render action: 'edit'
         end
       end
-    end   
+    end  
   end
 
   private
+
+  def is_limit_up? apply_set
+    apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count && @written_apply.apply_set_id.to_s != written_apply_params[:apply_set_id].to_s
+  end
 
   def set_written_apply
     @written_apply = WrittenApply.find(params[:id])

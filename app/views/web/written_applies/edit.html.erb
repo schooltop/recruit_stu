@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag 'home', media: 'all'%>
 <div align="center">
 
 <div style="width:100%" align="center"> 
@@ -22,12 +23,9 @@
 
 <%= simple_form_for [@written_apply], url: web_written_apply_path, method: :put do |f| %>
   <% if @written_apply.errors.any? %>
-    <div class="alert alert-danger" role="alert">
-      <ul>
-      <% @written_apply.errors.full_messages.each do |message| %>
-        <li style="color:#ff0000;list-style-type:none"><%= message %></li>
-      <% end %>
-      </ul>
+<<<<<<< HEAD
+    <div class="alert-error" >
+      <span style="color:#ff0000;"><%= @written_apply.errors.full_messages[0] %></span>
     </div>
   <% end %>
    <div class="one field">
