@@ -39,7 +39,7 @@ class Admin::WrittenAppliesController < Admin::BaseController
         @written_apply.errors[:msg] = "请选择笔试辅导时间段"
       else
         apply_set = ApplySet.find(written_apply_params[:apply_set_id])
-        if apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count
+        if is_limit_up?(apply_set) 
           apply_set.update(status: 0)
           @written_apply.errors[:msg] = "笔试辅导人数已超过上线"
         else
@@ -62,5 +62,9 @@ class Admin::WrittenAppliesController < Admin::BaseController
                                      :name,
                                      :cat_no,
                                      :status)
+  end
+
+  def is_limit_up? apply_set
+    apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count && @written_apply.apply_set_id.to_s != written_apply_params[:apply_set_id].to_s
   end
 end
