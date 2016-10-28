@@ -6,7 +6,7 @@ class Web::BaseController < ApplicationController
   before_action :is_student!
 
   def is_student!
-    current_user.is_student?
+    redirect_to root_path unless current_user.is_student?
   end
-  
+
 end
