@@ -44,7 +44,8 @@
       <%= text_field_tag 'email', @student.email%>
     </div>
     <div class="one field">
-      <%= f.input :cat_no%>
+      <%= label_tag 'cat_no', '车牌号:'%>
+      <%= text_field_tag 'written_apply[cat_no]', @written_apply.cat_no%>
       <%= f.hidden_field :student_id,value: @student.id%>
     </div>
     <div class="one field">

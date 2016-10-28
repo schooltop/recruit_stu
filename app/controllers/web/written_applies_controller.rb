@@ -2,7 +2,7 @@ class Web::WrittenAppliesController < Web::BaseController
   before_action :left_tab, :only => [:index]
   before_action :set_written_apply, only: [:edit, :update]
   before_action :set_student
-  
+
 	def index
      session[:top_tab] = nil
      session[:top_tab_tipe] = "笔试辅导预约"
@@ -26,9 +26,12 @@ class Web::WrittenAppliesController < Web::BaseController
         format.html {render :new}
       else
         apply_set = ApplySet.find(written_apply_params[:apply_set_id])
-        if apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count
+        if apply_set.limit_menber <= WrittenApply.record_by_apply_set_id(apply_set.id).count
           apply_set.update(status: 0)
           @written_apply.errors[:msg] = "笔试辅导人数已超过上线"
+          format.html {render :new}
+        elsif @student.written_apply
+          @written_apply.errors[:msg] = "已存在申请记录"
           format.html {render :new}
         else 
           if @written_apply.save
@@ -46,7 +49,7 @@ class Web::WrittenAppliesController < Web::BaseController
         format.html { render :edit }
       else
         apply_set = ApplySet.find(written_apply_params[:apply_set_id])
-        if apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count
+        if apply_set.limit_menber <= WrittenApply.record_by_apply_set_id(apply_set.id).count
           apply_set.update(status: 0)
           @written_apply.errors[:msg] = "笔试辅导人数已超过上线"
           format.html { render :edit }
