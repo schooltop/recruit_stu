@@ -13,18 +13,19 @@ class Web::StudentsController < Web::BaseController
   end
 
   def update_password
-    if params[:id].to_i == current_user.id
-      if params[:user][:crypted_password]==params[:password][:crypted]
-        @user=User.find(params[:id])
-        @user.password = params[:user][:crypted_password]
+    if params[:user][:id].to_i == current_user.id
+      if params[:user][:password]==params[:user][:password_confirmation]
+        @user=User.find(params[:user][:id])
+        @user.password = params[:user][:password]
         @user.save
         flash[:notice] = "用户信息修改成功"
+        redirect_to :action=>"user_edit_self"
       else
         flash[:rolse_notice] = "两次输入的密码不一致，请重新填写！"
         redirect_to :action=>"user_edit_self"
       end
     else
-      flash[:rolse_notice] = "用户只能修改自己的登录密码"
+      flash[:notice] = "用户只能修改自己的登录密码"
       redirect_to :action=>"user_edit_self"
     end  
   end

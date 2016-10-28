@@ -1,13 +1,16 @@
+<div style="margin-left: 100px;">
 <h2>修改密码</h2>
 
-<%= simple_form_for [@user], url: update_password_web_student_path, method: :put do |f| %>
+<%= simple_form_for [@user], url: update_password_web_students_path, method: :put do |f| %>
   <%= f.error_notification %>
+
+  <%= flash[:notice]%>
 
   <%= f.input :reset_password_token, :as => :hidden %>
   <%= f.full_error :reset_password_token %>
-
+  <%= f.hidden_field :id,value: @user.id%>
   <div class="form-inputs">
-    <%= f.input :password, :label => "新密码", :required => true, :autofocus => true %>
+    <%= f.input :password, :label => "更新密码", :required => true, :autofocus => true %>
     <%= f.input :password_confirmation, :label => "确认密码", :required => true %>
   </div>
 
@@ -15,5 +18,5 @@
     <%= f.button :submit, "修改" %>
   </div>
 <% end %>
-
+</div>
 
