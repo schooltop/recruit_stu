@@ -1,6 +1,6 @@
 <%= stylesheet_link_tag 'home', media: 'all'%>
-<div align="left" >
-
+<%= stylesheet_link_tag 'bootstrap_custom', media: 'all'%>
+<div align="center">
 <div style="width:100%" align="left"> 
   <div align="center" class="biaoti" >
       <h2>
@@ -26,31 +26,31 @@
       <span style="color:#ffffff;"><%= @written_apply.errors.full_messages[0] %></span>
     </div>
   <% end %>
-   <div class="one field">
+   <div class="one field form-part">
       <%= label_tag 'name', '姓名:'%>
       <%= text_field_tag 'name', @student.name%>
     </div>
 
-     <div class="one field">
+     <div class="one field form-part">
       <%= label_tag 'mobile', '电话:'%>
       <%= text_field_tag 'mobile', @student.mobile%>
     </div>
 
-     <div class="one field">
+     <div class="one field form-part">
       <%= label_tag 'email', '邮箱:'%>
       <%= text_field_tag 'email', @student.email%>
     </div>
-    <div class="one field">
+    <div class="one field form-part">
       <%= label_tag 'cat_no', '车牌号:'%>
       <%= text_field_tag 'written_apply[cat_no]', @written_apply.cat_no%>
       <%= f.hidden_field :student_id,value: @student.id%>
     </div>
-    <div class="one field">
+    <div class="one field form-part">
       <%= label_tag 'time', '笔试辅导时间:'%>
       <%= f.select :apply_set_id, apply_set_options %>
     </div>
-    <div class="actions">
-      <%= f.submit "确定", class: "ui blue button", name: '' %>
+    <div class = 'wraper_btn' style="text-align:left;">
+      <%= f.submit "提交", class: "btn btn-primary", name: '' %>
     </div>
 <% end %>
 
