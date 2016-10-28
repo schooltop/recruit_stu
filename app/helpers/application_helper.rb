@@ -14,7 +14,7 @@ module ApplicationHelper
       end
     end
     records << @written_apply.apply_set unless @written_apply.id.nil?
-    records.map{|m|[m.comment,m.id]}
+    records.uniq.map{|m|[m.comment,m.id]}
   end
 
   include SendMenu
