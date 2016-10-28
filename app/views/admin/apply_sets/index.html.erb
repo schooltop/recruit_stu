@@ -1,0 +1,37 @@
+<div class="ui grid">
+  <div class="left floated fourteen wide column">
+    <h2>申请设置信息</h2>
+  </div>
+</div>
+<%= render 'search_form'  %>
+<div class="ui blue segment">
+  <div class="ui grid">
+    <div class="left floated wide column">
+      <%= link_to new_admin_apply_set_path, remote: true, class: 'ui primary button' do %>
+        <i class="plus icon"></i>新增申请设置
+      <% end %>
+    </div>
+  </div>
+  <table class="ui selectable striped celled table">
+    <thead>
+    <tr >
+      <th class="center aligned">学生班级ID</th>
+      <th class="center aligned">预约开始时间</th>
+      <th class="center aligned">预约结束时间</th>
+      <th class="center aligned">预约地点</th>
+      <th class="center aligned">描述</th>
+      <th class="center aligned">学生人数限制</th>
+      <th class="center aligned">设置状态</th>
+      <th class="center aligned">开放时间</th>
+      <th class="center aligned">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render partial: 'list', collection: @apply_sets, as: :apply_set %>
+    </tbody>
+  </table>
+  <span class="blue">
+    <%= page_entries_info(@apply_sets) %>
+  </span>
+  <%= paginate(@apply_sets, :theme => 'admin')%>
+</div>

@@ -1,0 +1,60 @@
+
+<div align="center">
+<div style="width:100%" align="left"> 
+  <div align="center" class="biaoti" >
+      <h2>
+         <%= @student.name %> 笔试辅导预约
+      </h2>
+  </div>  
+</div>
+
+
+<div style="width:100%" align="left"> 您好，恭喜您通过面试，进入笔试准备阶段。现请您认真阅读下面的［预约说明］，并选择一个意向的笔试辅导时间段，请您根据预约的时间参加笔试辅导，谢谢您的配合！</div>
+
+<div style="width:100%" align="left"> ［预约说明］</div>
+
+<div style="width:100%" align="left"> 1. 请根据当前可选的笔试辅导日期预约，每人只能预约一次。</div>
+
+<div style="width:100%" align="left"> 2. 笔试辅导的每个时间段均设有上线人数，根据先到先选的原则，各时间段若选满则停止预约，请您选择其他可预约时段。</div>
+
+<div style="width:100%" align="left"> 3. 如果您开车进校面试，请在下方“车辆预约”处填写您的车牌号，并于当天从东北门入校。</div>
+
+<%= simple_form_for [@written_apply], url: web_written_applies_path, method: :post do |f| %>
+  <% if @written_apply.errors.any? %>
+    <div class="alert-error" >
+      <span style="color:#ffffff;"><%= @written_apply.errors.full_messages[0] %></span>
+    </div>
+  <% end %>
+   <div class="one field form-part">
+      <%= label_tag 'name', '姓名:'%>
+      <%= text_field_tag 'name', @student.name%>
+    </div>
+
+     <div class="one field form-part">
+      <%= label_tag 'mobile', '电话:'%>
+      <%= text_field_tag 'mobile', @student.mobile%>
+    </div>
+
+     <div class="one field form-part">
+      <%= label_tag 'email', '邮箱:'%>
+      <%= text_field_tag 'email', @student.email%>
+    </div>
+    <div class="one field form-part">
+      <%= label_tag 'cat_no', '车牌号:'%>
+      <%= text_field_tag 'written_apply[cat_no]', @written_apply.cat_no%>
+      <%= f.hidden_field :student_id,value: @student.id%>
+    </div>
+    <div class="one field form-part">
+      <%= label_tag 'time', '笔试辅导时间:'%>
+      <%= f.select :apply_set_id, apply_set_options, {include_blank: "请选择一个辅导时间段"} %>
+    </div>
+    <div class = 'wraper_btn' style="text-align:left;">
+      <%= f.submit "提交", class: "btn btn-primary", name: '' %>
+    </div>
+<% end %>
+
+
+<div style="width:100%" align="left"> 备注：</div>
+<div style="width:100%" align="left"> 笔试辅导预约模块将在11月开放，第一次上线，点击笔试辅导预约后，请显示：目前暂不能进行笔试辅导预约，预约将于11月开放，请考生等待后续通知</div>
+
+</div>

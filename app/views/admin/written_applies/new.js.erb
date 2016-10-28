@@ -1,0 +1,9 @@
+$('#new_written_apply_modal').remove();
+$('#edit_written_apply_modal').remove();
+$('body').append('<div class="ui modal" id="new_written_apply_modal"><i class="close icon"></i><%= j(render 'new') %></div>');
+$('#new_written_apply_modal').modal('setting', {autofocus: false}).modal('show');
+$('select.dropdown').dropdown({placeholder: false});
+$("input").focus(function(){
+  $(this).parent().removeClass('error');
+  $(this).parent().find('.red.pointing').remove();
+});

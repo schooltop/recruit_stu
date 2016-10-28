@@ -1,0 +1,35 @@
+<h2 class="ui dividing header">导入笔试成绩</h2>
+<div class="ui segment">
+  <%= form_tag create_import_written_score_admin_written_scores_path,  method: 'post', multipart: true, class: 'ui inline form' do %>
+    <div class="field">
+      <label class="required">选择需要导入的笔试成绩表</label>
+      <input type="file" name="file" class="ui button"/>
+    </div>
+    <button class="ui primary button" type="submit"  name="commit" value="上传" >Submit</button>
+    <% if @message && @message[:detail].present? %>
+      <span style="color:<%= @message[:color] %>"><%= @message[:detail] %></span>
+    <% end %>        
+  <% end %>
+
+  <div class="ui items">
+    <div class="item">
+      <div class="content">
+        <a class="header">导入文件格式模板</a>
+        <div class="description">
+          <p>
+            导入的模版需要转化为.xlsx的格式。
+            导入后请注意查看导入结果报告，导入失败的数据会显示错误原因。
+          </p>
+        </div>
+        <div id="return_message">
+          <% if @import %>
+            <% @import[:failed].each do |failed|%>
+              <p style="color: #ff0000">第<%= failed[:excel_row] %>行：<%=failed[:message] %></p>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

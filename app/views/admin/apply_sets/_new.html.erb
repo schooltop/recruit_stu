@@ -1,0 +1,55 @@
+<%= stylesheet_link_tag 'home', media: 'all'%>
+<h2 class="ui dividing header">新增申请设置</h2>
+<%= simple_form_for [@apply_set], url: admin_apply_sets_path, method: :post, remote: true do |f| %>
+   <div class="two fields">   
+      <div class="time_wraper one field">
+        <%= f.label :apply_at %>
+        <%= f.date_field :apply_at, value: Time.now.strftime('%Y-%m-%d') %>
+      </div>
+      <div class="time_wraper one field">
+        <%= f.label :end_apply_at %>
+        <%= f.date_field :end_apply_at, value: Time.now.strftime('%Y-%m-%d') %>
+      </div>
+      
+    </div>
+
+    <div class="two fields">
+      <div class="time_wraper one field">
+        <%= f.label :show_at %>
+        <%= f.date_field :show_at, value: Time.now.strftime('%Y-%m-%d') %>
+      </div> 
+      
+      <%= f.input :place_where %>
+    </div>
+
+    <div class="two fields">
+      <%= f.input :student_class_id %>
+      <%= f.input :limit_menber %>
+         
+    </div>
+
+    <div class="one field">
+      <%= f.input :comment%>
+    </div>
+
+    <div class="one field">
+       <div class="time_wraper one field">
+        <%= f.label :status %>
+        <div class="two fields">
+          <div class="radio_wraper">
+            <%= f.label :status ,'开启'%>
+            <%= f.radio_button :status, '1' %>
+          </div>
+          <div class="radio_wraper">
+            <%= f.label :status ,'关闭'%>
+            <%= f.radio_button :status, '0',{checked:true} %>
+          </div>    
+        </div>
+      </div>
+    </div>
+    
+<% end %>
+<div class="actions">
+  <div class="ui button" onclick="javascript: $('#new_apply_set_modal').modal('hide')">取消</div>
+  <div class="ui blue button" onclick="javascript: $('#new_apply_set').submit();" >确定</div>
+</div>

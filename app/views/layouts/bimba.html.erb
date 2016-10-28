@@ -17,7 +17,7 @@
 <html lang="zh-cn">
 <!--<![endif]-->
 <head>
-   <%= render 'shared/web/top' %>
+   <%= render 'shared/web/head' %>
 </head>
 <body>
 
@@ -29,7 +29,6 @@
         <div class="container mp-1">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-8 col-md-push-4 mp-2">
-                	 <p class= "left_b" >&nbsp;</p>
 
                      <%= yield %>
 
@@ -45,7 +44,10 @@
                             <div class="marquee-list">
                                 <div class="nav-side left_a" id="left_list"  ontouchstart="otst(event);" ontouchend="oted1(event);">
                                     <ul class="nav-list" style="position:relative;left:0px;">
-                                      <%#= left_title_select t("notice"),"/student_notices" %>
+                                      <%= raw left_title_select "面试成绩查询","/web/interview_scores" %>
+                                      <%= raw left_title_select "笔试辅导预约","/web/written_applies" %>
+                                      <%= raw left_title_select "笔试成绩查询","/web/written_scores" %>
+                                      <%= raw left_title_select "录取结果查询","/web/admission_records" %>
                                     </ul>
                                 </div>
                             </div>

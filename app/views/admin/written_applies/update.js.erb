@@ -1,0 +1,10 @@
+<% if @written_apply.errors.any? %>
+		$("#form_message").text("<%= @written_apply.errors.full_messages[0].sub(/Msg/,'') %>"); 
+		$("#form_message").show(200); 
+<% else %> 
+  $('#edit_written_apply_modal').modal('hide').fadeOut(5000); 
+  $('#edit_written_apply_modal').remove(); 
+  $("#written_apply_<%= @written_apply.id %>").replaceWith("<%= j(render partial: 'list', locals: { written_apply: @written_apply} ) %>");
+  $(".button").popup();
+  $(".icon").popup();
+<% end %>

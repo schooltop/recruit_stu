@@ -1,0 +1,15 @@
+<% if @q.present? %>
+  <div class="ui blue segment">
+    <%= simple_form_for @q,  url: admin_apply_sets_path, method: :get, wrapper: 'semantic_search_form' do |f| %>
+      <div class="ui five column grid">
+        <%= f.input 'student_class_id', placeholder: '学生班级' %>
+        <%= f.input 'apply_at', placeholder: '预约开始时间' %>
+        <%= f.input 'end_apply_at', placeholder: '预约结束时间' %>
+        <%= f.input 'show_at-like', placeholder: '开放时间' %>
+        <div class="column">
+          <%= f.submit '搜索', class: 'ui primary button' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

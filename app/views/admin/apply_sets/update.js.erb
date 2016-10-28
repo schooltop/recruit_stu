@@ -1,0 +1,5 @@
+$('#edit_apply_set_modal').modal('hide').fadeOut(5000); 
+$('#edit_apply_set_modal').remove(); 
+$("#apply_set_<%= @apply_set.id %>").replaceWith("<%= j(render partial: 'list', locals: { apply_set: @apply_set} ) %>");
+$(".button").popup();
+$(".icon").popup();

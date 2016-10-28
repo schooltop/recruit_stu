@@ -1,0 +1,40 @@
+
+<div class="ui grid" style="margin-left:100px" >
+  <div class="left floated fourteen wide column">
+    <h3>申请信息</h3>
+  </div>
+</div>
+<%= render 'search_form'  %>
+<div class="ui blue segment" style="margin-left:100px">
+  <div class="ui grid">
+    <div class="left floated wide column">
+    <%if @student.written_apply %>
+    <% else %>
+      <%= link_to new_web_written_apply_path, remote: true, class: 'ui primary button' do %>
+        <i class="plus icon"></i>新增笔试申请
+      <% end %>
+    <% end %>  
+    </div>
+  </div>
+  <table class="table table-bordered table-hover"  cellspacing="0" width="100%" > 
+    <thead>
+    <tr >
+      <th class="aligned">学生ID</th>
+      <th class="aligned">申请ID</th>
+      <th class="aligned">名字</th>
+      <th class="aligned">车号</th>
+      <th class="aligned">申请状态</th>
+      <th class="aligned">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render partial: 'list', collection: @written_applies, as: :written_apply %>
+    </tbody>
+  </table>
+  <span class="blue">
+    <%#= page_entries_info(@written_applies) %>
+  </span>
+  <%#= paginate(@written_applies, :theme => 'admin')%>
+</div>
+
+
