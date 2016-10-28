@@ -1,21 +1,21 @@
 class Web::WrittenAppliesController < Web::BaseController
   before_action :left_tab, :only => [:index]
   before_action :set_written_apply, only: [:edit, :update]
+  before_action :set_student
+  
 	def index
      session[:top_tab] = nil
      session[:top_tab_tipe] = "笔试辅导预约"
-	   @student = current_user.student
 	   @written_applies = WrittenApply.preload(:student).default_where(student_id:@student.id)
      redirect_to :action=>"new" unless @written_applies.size>0
 	end
 
 	def new
-    @student = current_user.student
     @written_apply = WrittenApply.new
 	end
 
 	def edit
-    @student = current_user.student
+
   end
 
   def create  
@@ -63,6 +63,10 @@ class Web::WrittenAppliesController < Web::BaseController
 
   def set_written_apply
     @written_apply = WrittenApply.find(params[:id])
+  end
+
+  def set_student
+    @student = current_user.student
   end
 
   def written_apply_params
