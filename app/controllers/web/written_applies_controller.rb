@@ -3,9 +3,7 @@ class Web::WrittenAppliesController < Web::BaseController
 	def index
 	   @student = current_user.student
 	   @written_applies = WrittenApply.preload(:student).default_where(student_id:@student.id)
-     p @written_applies
-     p "1123"*123
-     redirect_to :new unless @written_applies.size>0
+     redirect_to :action=>"new" unless @written_applies.size>0
 	end
 
 	def new
