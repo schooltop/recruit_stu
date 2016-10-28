@@ -42,6 +42,7 @@ gem 'spreadsheet'
 gem 'roo', require: false
 gem 'carrierwave'
 gem 'httparty'
+gem "non-stupid-digest-assets"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
