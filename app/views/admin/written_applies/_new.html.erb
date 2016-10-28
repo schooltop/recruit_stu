@@ -24,7 +24,7 @@
     </div>
     <div class="one field">
       <%= label_tag 'time', '笔试辅导时间:'%>
-      <%= f.select :apply_set_id, apply_set_options %>
+      <%= f.select :apply_set_id, apply_set_options, {include_blank: "请选择一个辅导时间段"} %>
     </div>
 <% end %>
 <div class="actions">

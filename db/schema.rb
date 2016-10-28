@@ -135,19 +135,19 @@ ActiveRecord::Schema.define(version: 20161028114335) do
     t.integer  "status",                                             comment: "用户状态"
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
-    t.integer "role_id",                            null: false
+    t.integer  "role_id"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
   create_table "written_applies", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "student_id",                comment: "学生ID"
-    t.integer  "apply_set_id",              comment: "申请ID"
-    t.string   "name",                      comment: "学生名字"
-    t.string   "cat_no",                    comment: "学生名字"
-    t.integer  "status",                    comment: "学生申请状态"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "student_id",                            comment: "学生ID"
+    t.integer  "apply_set_id",                          comment: "申请ID"
+    t.string   "name",                                  comment: "学生名字"
+    t.string   "cat_no",                                comment: "车号"
+    t.integer  "status",       default: 0,              comment: "学生申请状态"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "written_scores", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
