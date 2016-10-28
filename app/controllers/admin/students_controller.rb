@@ -76,7 +76,7 @@ class Admin::StudentsController < Admin::BaseController
     search_date = Time.now
     file = Spreadsheet.open "#{Rails.root}/public/xls/students.xls"
     list = file.worksheet  0
-    students = Stuednt.all
+    students = Student.all
     students.each_with_index do |student,index|
       list[index+1,0] = student.id
       list[index+1,1] = student.mobile
