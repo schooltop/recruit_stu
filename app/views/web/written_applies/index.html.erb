@@ -1,22 +1,21 @@
 
-<div class="ui grid" >
+
+
+ <div class="ui grid">
   <div class="left floated fourteen wide column">
     <h2>申请信息</h2>
   </div>
 </div>
 <%= render 'search_form'  %>
-<div class="ui blue segment" style="margin-left:100px">
+<div class="ui blue segment">
   <div class="ui grid">
     <div class="left floated wide column">
-    <%if @student.written_apply %>
-    <% else %>
-      <%= link_to new_web_written_apply_path, remote: true, class: 'ui primary button' do %>
+     <%= link_to new_web_written_apply_path, remote: true, class: 'ui primary button' do %>
         <i class="plus icon"></i>新增笔试申请
       <% end %>
-    <% end %>  
     </div>
   </div>
-  <table class="table table-bordered table-hover"  cellspacing="0" width="100%" > 
+  <table class="ui selectable striped celled table">
     <thead>
     <tr >
       <th class="center aligned">学生ID</th>
@@ -28,13 +27,9 @@
     </tr>
     </thead>
     <tbody>
-    <%= render partial: 'list', collection: @written_applies, as: :written_apply %>
+
     </tbody>
   </table>
   <span class="blue">
-    <%#= page_entries_info(@written_applies) %>
-  </span>
-  <%#= paginate(@written_applies, :theme => 'admin')%>
-</div>
 
-</div>
+  </span>
