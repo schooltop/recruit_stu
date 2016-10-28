@@ -1,0 +1,19 @@
+<h2>修改密码</h2>
+
+<%= simple_form_for [@user], url: update_password_web_student_path, method: :put do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :reset_password_token, :as => :hidden %>
+  <%= f.full_error :reset_password_token %>
+
+  <div class="form-inputs">
+    <%= f.input :password, :label => "新密码", :required => true, :autofocus => true %>
+    <%= f.input :password_confirmation, :label => "确认密码", :required => true %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "修改" %>
+  </div>
+<% end %>
+
+
