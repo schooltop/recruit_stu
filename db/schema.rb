@@ -135,7 +135,7 @@ ActiveRecord::Schema.define(version: 20161028114335) do
     t.integer  "status",                                             comment: "用户状态"
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
-    t.integer  "role_id"
+    t.integer "role_id",                            null: false
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end

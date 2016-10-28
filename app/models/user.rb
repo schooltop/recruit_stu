@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatablerole_id
+         :recoverable, :rememberable, :trackable, :validatable
 
 
   def is_active?
