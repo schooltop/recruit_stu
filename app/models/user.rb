@@ -16,6 +16,6 @@ class User < ApplicationRecord
   end
 
   def student
-    student.find_by(email:self.email)
+    Student.find_by(email:self.email)
   end
 end

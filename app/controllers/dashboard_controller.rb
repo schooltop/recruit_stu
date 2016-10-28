@@ -1,12 +1,12 @@
 class DashboardController < ApplicationController
   def index
-  	if current_user.is_worker?
+  	if current_user.is_worker? && false
   	  @worker = true	
-      layout 'admin'
+      render :layout => "admin"
   	else
   	  @worker = false	
   	  @student = current_user.student
-      layout 'bimba'
+      render :layout => "bimba"
   	end
   end
 end

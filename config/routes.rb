@@ -33,4 +33,11 @@ Rails.application.routes.draw do
     resources :apply_sets
   end
 
+  namespace :web do
+    resources :interview_scores
+    resources :written_scores
+    resources :admission_records
+    resources :written_applies
+  end
+
 end
