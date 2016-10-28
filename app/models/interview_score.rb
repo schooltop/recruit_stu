@@ -2,7 +2,7 @@ class InterviewScore < ApplicationRecord
   belongs_to :student
 
  InterviewScore_COLUMNS = {
-  	    mobile: 0,
+  	  mobile: 0,
 	    name: 1,
 	    score: 2,
 	    score_order: 3
