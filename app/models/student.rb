@@ -40,6 +40,7 @@ class Student < ApplicationRecord
       user.email = hash[:email]
       user.mobile = hash[:mobile]
       user.status = 1
+      user.role_id = 1
       user.save
       
       return students , message

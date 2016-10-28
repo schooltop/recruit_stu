@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :trackable, :validatablerole_id
+
 
   def is_active?
     self.status.to_i == 1
@@ -20,6 +21,12 @@ class User < ApplicationRecord
 
   def student
     Student.find_by(email:self.email)
+  end
+
+  # 初始化激活状态
+  before_create :init_status
+  def init_status
+    self.status = 1
   end
   
 end

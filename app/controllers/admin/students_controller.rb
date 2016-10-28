@@ -91,14 +91,14 @@ class Admin::StudentsController < Admin::BaseController
     list = file.worksheet  0
     students = Student.all
     students.each_with_index do |student,index|
-      list[index+1,0] = student.id
-      list[index+1,1] = student.mobile
-      list[index+1,2] = student.name
-      list[index+1,3] = "身份证" #student.card_type
-      list[index+1,4] = student.id_card
-      list[index+1,5] = student.email
-      list[index+1,6] = student.name_en
-      list[index+1,7] = student.student_no
+      list[index+3,0] = student.id
+      list[index+3,1] = student.mobile
+      list[index+3,2] = student.name
+      list[index+3,3] = "身份证" #student.card_type
+      list[index+3,4] = student.id_card
+      list[index+3,5] = student.email
+      list[index+3,6] = student.name_en
+      list[index+3,7] = student.student_no
     end
     xls_report = StringIO.new
     file.write xls_report
