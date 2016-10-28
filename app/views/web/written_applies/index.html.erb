@@ -7,9 +7,15 @@
 <div class="ui blue segment">
   <div class="ui grid">
     <div class="left floated wide column">
+    <%if @student.written_apply %>
+      <%= link_to edit_web_written_apply_path(@student.written_apply.id), remote: true, class: 'ui primary button' do %>
+        <i class="plus icon"></i>修改笔试申请
+      <% end %>
+    <% else %>
       <%= link_to new_web_written_apply_path, remote: true, class: 'ui primary button' do %>
         <i class="plus icon"></i>新增笔试申请
       <% end %>
+    <% end %>  
     </div>
   </div>
   <table class="ui selectable striped celled table">

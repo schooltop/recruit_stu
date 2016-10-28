@@ -40,10 +40,13 @@
       <%= label_tag 'email', '邮箱:'%>
       <%= text_field_tag 'email', @student.email%>
     </div>
+
     <div class="one field">
-      <%= f.input :cat_no%>
+      <%= label_tag 'cat_no', '车牌号:'%>
+      <%= text_field_tag 'written_apply[cat_no]', @written_apply.cat_no%>
       <%= f.hidden_field :student_id,value: @student.id%>
     </div>
+
     <div class="one field">
       <%= label_tag 'time', '笔试辅导时间:'%>
       <%= f.select :apply_set_id, apply_set_options %>

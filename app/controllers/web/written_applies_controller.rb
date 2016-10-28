@@ -2,7 +2,7 @@ class Web::WrittenAppliesController < Web::BaseController
   before_action :left_tab, :only => [:index]
   before_action :set_written_apply, only: [:edit, :update]
   before_action :set_student
-  
+
 	def index
      session[:top_tab] = nil
      session[:top_tab_tipe] = "笔试辅导预约"
