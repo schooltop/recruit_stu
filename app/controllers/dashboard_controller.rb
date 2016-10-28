@@ -1,7 +1,7 @@
 class DashboardController < ApplicationController
   before_action :authenticate_user!
   def index
-  	if 1 == 1#current_user.is_worker? && false
+  	if current_user.is_worker? 
   	  @worker = true	
       render :layout => "admin"
   	else
