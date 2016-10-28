@@ -51,10 +51,12 @@
       <%= label_tag 'time', '笔试辅导时间:'%>
       <%= f.select :apply_set_id, apply_set_options %>
     </div>
+
+    <div class="actions">
+      <%= f.submit "确定", class: "ui blue button", name: '' %>
+    </div>
 <% end %>
-<div class="actions">
-  <div class="ui blue button" type="submit" >确定</div>
-</div>
+
 
 
 
