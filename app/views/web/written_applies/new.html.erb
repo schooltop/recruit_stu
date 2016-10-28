@@ -9,22 +9,22 @@
 </div>
 
 
-您好，恭喜您通过面试，进入笔试准备阶段。现请您认真阅读下面的［预约说明］，并选择一个意向的笔试辅导时间段，请您根据预约的时间参加笔试辅导，谢谢您的配合！
+<p>您好，恭喜您通过面试，进入笔试准备阶段。现请您认真阅读下面的［预约说明］，并选择一个意向的笔试辅导时间段，请您根据预约的时间参加笔试辅导，谢谢您的配合！</p>
 
-［预约说明］
+<p>［预约说明］</p>
 
-1. 请根据当前可选的笔试辅导日期预约，每人只能预约一次。
+<p>1. 请根据当前可选的笔试辅导日期预约，每人只能预约一次。</p>
 
-2. 笔试辅导的每个时间段均设有上线人数，根据先到先选的原则，各时间段若选满则停止预约，请您选择其他可预约时段。
+<p>2. 笔试辅导的每个时间段均设有上线人数，根据先到先选的原则，各时间段若选满则停止预约，请您选择其他可预约时段。</p>
 
-3. 如果您开车进校面试，请在下方“车辆预约”处填写您的车牌号，并于当天从东北门入校。
+<p>3. 如果您开车进校面试，请在下方“车辆预约”处填写您的车牌号，并于当天从东北门入校。</p>
 
 <%= simple_form_for [@written_apply], url: web_written_applies_path, method: :post do |f| %>
   <% if @written_apply.errors.any? %>
     <div class="alert alert-danger" role="alert">
       <ul>
       <% @written_apply.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <li style="color:#ff0000;list-style-type:none"><%= message %></li>
       <% end %>
       </ul>
     </div>
@@ -58,12 +58,21 @@
 <% end %>
 
 
-
-
-
-
-
-备注：
-笔试辅导预约模块将在11月开放，第一次上线，点击笔试辅导预约后，请显示：目前暂不能进行笔试辅导预约，预约将于11月开放，请考生等待后续通知
+<p>备注：</p>
+<p>笔试辅导预约模块将在11月开放，第一次上线，点击笔试辅导预约后，请显示：目前暂不能进行笔试辅导预约，预约将于11月开放，请考生等待后续通知</p>
 
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+       $('.field_with_errors').parent().addClass('have_error');
+    });
+</script>
+
+<style type="text/css">
+  .field_with_errors {
+    display:inline;
+    margin:0px;
+    padding:0px;
+    }
+</style>
