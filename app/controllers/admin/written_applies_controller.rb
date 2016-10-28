@@ -34,7 +34,6 @@ class Admin::WrittenAppliesController < Admin::BaseController
   end
 
   def update
-    @written_apply = WrittenApply.find(params[:id])
     respond_to do |format|
       if written_apply_params[:apply_set_id].blank?
         @written_apply.errors[:msg] = "请选择笔试辅导时间段"
