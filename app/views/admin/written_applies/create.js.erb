@@ -7,7 +7,7 @@
 <%# end %>
 <% if @written_apply.errors.any? %>
 		$("#form_message").text("<%= @written_apply.errors.full_messages[0].sub(/Msg/,'') %>"); 
-		$("#form_message").show(200).fadeOut(5000); 
+		$("#form_message").show(200); 
 <% else %> 
   $('#new_written_apply_modal').modal('hide'); 
   $('#new_written_apply_modal').remove(); 
