@@ -24,7 +24,7 @@
 <%= simple_form_for [@written_apply], url: web_written_apply_path, method: :put do |f| %>
   <% if @written_apply.errors.any? %>
     <div class="alert-error" >
-      <span style="color:#ffffff;"><%= @written_apply.errors.full_messages[0] %></span>
+      <%= @written_apply.errors.full_messages[0] %>
     </div>
   <% end %>
    <div class="one field form-part">

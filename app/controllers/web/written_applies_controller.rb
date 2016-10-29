@@ -21,46 +21,49 @@ class Web::WrittenAppliesController < Web::BaseController
   def create  
     @written_apply = WrittenApply.new(written_apply_params)
     if written_apply_params[:apply_set_id].blank?
-      @written_apply.errors[:msg] = "请选择笔试辅导时间段"
-      render action: 'new'
+      @written_apply.errors.add(:msg, "请选择笔试辅导时间段")
     else
       apply_set = ApplySet.find(written_apply_params[:apply_set_id])
-      if apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count
+      if !can_written_apply?
+        @written_apply.errors.add(:msg, "您的面试信息正在审验,不能预约笔试。")
+      elsif apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count
         apply_set.update(status: 0)
-        @written_apply.errors[:msg] = "笔试辅导人数已超过上线"
-        render action: 'new'
+        @written_apply.errors.add(:msg, "笔试辅导人数已超过上线")
       else 
         if @written_apply.save
-          redirect_to web_written_applies_url
-        else
-          render action: 'new'
+          redirect_to web_written_applies_url and return
         end
       end
     end
+    render action: 'new'
   end
 
 
   def update
     if written_apply_params[:apply_set_id].blank?
-      @written_apply.errors[:msg] = "请选择笔试辅导时间段"
-      render action: 'edit'
+      @written_apply.errors.add(:msg, "请选择笔试辅导时间段")
     else
       apply_set = ApplySet.find(written_apply_params[:apply_set_id])
-      if is_limit_up?(apply_set) 
+      if !can_written_apply?
+        @written_apply.errors.add(:msg, "您的面试信息正在审验,不能预约笔试。")
+      elsif is_limit_up?(apply_set) 
         apply_set.update(status: 0)
-        @written_apply.errors[:msg] = "笔试辅导人数已超过上线"
-        render action: 'edit'
+        @written_apply.errors.add(:msg, "笔试辅导人数已超过上线")
       else
         if @written_apply.update(written_apply_params)
-         redirect_to web_written_applies_url
-        else
-          render action: 'edit'
+          redirect_to web_written_applies_url and return
         end
       end
-    end  
+    end
+    render action: 'edit'  
   end
 
   private
+
+  def can_written_apply?
+    interview_score = @student.interview_score
+    interview_score.present? && interview_score.status.to_s == "1"
+  end
 
   def is_limit_up? apply_set
     apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count && @written_apply.apply_set_id.to_s != written_apply_params[:apply_set_id].to_s

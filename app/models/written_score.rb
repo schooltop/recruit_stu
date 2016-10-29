@@ -1,6 +1,5 @@
 class WrittenScore < ApplicationRecord
   belongs_to :student
-
   SCORE_COLUMNS = {
     name: 0,
     score_order: 1,
