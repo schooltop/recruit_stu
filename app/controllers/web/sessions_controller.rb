@@ -13,7 +13,8 @@ module Web
       respond_to do |format|
         session[:user_id] = current_user.id
         current_user.add_log("#{current_user.email} Login At #{Time.now.format_date(:full)}",request.ip)
-        format.html { redirect_to after_sign_in_path_for(resource) }
+        #format.html { redirect_to after_sign_in_path_for(resource) }
+        format.html { redirect_to "/" }
         format.json { render status: '201', json: resource.as_json(only: [:login, :email, :private_token]) }
       end
     end
