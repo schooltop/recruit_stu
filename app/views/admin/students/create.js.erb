@@ -1,2 +1,3 @@
+$("tbody").prepend('<%= j render('list', student: @student) %>');
 $('#new_student_modal').modal('hide').fadeOut(5000); 
 $('#new_student_modal').remove(); 

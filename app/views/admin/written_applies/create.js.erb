@@ -11,7 +11,7 @@
 <% else %> 
   $('#new_written_apply_modal').modal('hide'); 
   $('#new_written_apply_modal').remove(); 
-  $("#written_apply_<%= @written_apply.id %>").replaceWith("<%= j(render partial: 'list', locals: { written_apply: @written_apply} ) %>");
+  $("tbody").prepend('<%= j render('list', written_apply: @written_apply) %>');
   $(".button").popup();
   $(".icon").popup();
 <% end %>
