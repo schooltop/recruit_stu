@@ -1,2 +1,3 @@
+$("tbody").prepend('<%= j render('list', apply_set: @apply_set) %>');
 $('#new_apply_set_modal').modal('hide').fadeOut(5000); 
 $('#new_apply_set_modal').remove(); 

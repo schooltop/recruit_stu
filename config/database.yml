@@ -4,12 +4,11 @@ default: &default
   reconnect: true
   username: root
   password: 
-  socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
   database: recruit_stu_development
-
 
 test:
   <<: *default
@@ -19,10 +18,10 @@ staging:
   <<: *default
   database: recruit_stu_staging
   username: root
-  password: 
+  password: root
   host: localhost
   port: 3306
-  #socket: /var/run/mysqld/mysqld.sock
+  socket: /var/run/mysqld/mysqld.sock
 
 production:
   <<: *default
@@ -31,4 +30,4 @@ production:
   password: root
   host: localhost
   port: 3306
-  #socket: /var/run/mysqld/mysqld.sock
+  socket: /var/run/mysqld/mysqld.sock
