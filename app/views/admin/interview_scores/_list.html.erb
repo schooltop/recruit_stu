@@ -18,6 +18,9 @@
     <%= interview_score.show_at %>
   </td> -->
   <td class="center aligned">
+    <%= interview_score.created_at.strftime('%Y-%m-%d') %>
+  </td>
+  <td class="center aligned">
     <%= interview_score.status %>
   </td>
   <!-- <td class="center aligned">
