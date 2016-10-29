@@ -59,9 +59,9 @@ class Admin::WrittenAppliesController < Admin::BaseController
     list = file.worksheet  0
     written_apply = WrittenApply.all
     written_apply.each_with_index do |written_apply,index|
-      list[index+1,0] = written_apply.student.name
-      list[index+1,1] = written_apply.student.mobile
-      list[index+1,2] = written_apply.apply_set.comment
+      list[index+1,0] = written_apply.student&.name
+      list[index+1,1] = written_apply.student&.mobile
+      list[index+1,2] = written_apply.apply_set&.comment
       list[index+1,3] = written_apply.cat_no
       list[index+1,4] = written_apply.status
     end
@@ -74,7 +74,7 @@ class Admin::WrittenAppliesController < Admin::BaseController
 
   def can_written_apply?
     interview_score = @current_student.interview_score
-    interview_score.present? && interview_score.status.to_s == "1"
+    interview_score.present? && interview_score.status == "通过"
   end
 
   def set_student

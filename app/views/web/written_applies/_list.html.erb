@@ -3,10 +3,10 @@
     <span><%= written_apply.student_id%></span>
   </td>
   <td align="center">
-    <%=  written_apply.apply_set.comment%>
+    <%=  written_apply.apply_set&.comment%>
   </td>
   <td align="center">
-    <%= written_apply.student.name %>
+    <%= written_apply.student&.name %>
   </td>
   <td align="center">
     <%= written_apply.cat_no %>

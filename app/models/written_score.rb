@@ -6,8 +6,12 @@ class WrittenScore < ApplicationRecord
     score: 2,
     mobile: 3
   }
+  enum status: {
+    "通过": 1,
+    "不通过": 0
+  }
 
-    # 导入笔试成绩数据
+  # 导入笔试成绩数据
   def self.save_from_hash(hash, current_user)
       message = "笔试成绩导入成功！"
       written_scores = []
@@ -19,6 +23,9 @@ class WrittenScore < ApplicationRecord
                                        score_order: hash[:score_order],
                                             status: 1)
         written_score.save
+      else
+        written_scores << hash
+        message = "#{hash[:mobile]}该学生还没有创建！"  
       end
       return written_scores , message
   end

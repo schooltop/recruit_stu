@@ -3,7 +3,10 @@ class Student < ApplicationRecord
   has_one :written_score
   has_one :written_apply
   has_one :admission_record
-
+  enum status: {
+    "通过": 1,
+    "不通过": 0
+  }
   STUDENT_COLUMNS = {
   	  idno: 0,
 	    mobile: 1,

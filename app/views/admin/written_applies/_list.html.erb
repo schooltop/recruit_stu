@@ -1,9 +1,9 @@
 <tr id="<%= ajax_bar_element_id(written_apply) %>">
   <td class="center aligned">
-    <span><%= written_apply.student.name%></span>
+    <span><%= written_apply.student&.name%></span>
   </td>
   <td class="center aligned">
-    <%=  written_apply.apply_set.comment%>
+    <%=  written_apply.apply_set&.comment%>
   </td>
   <td class="center aligned">
     <%= written_apply.cat_no %>

@@ -62,7 +62,7 @@ class Web::WrittenAppliesController < Web::BaseController
 
   def can_written_apply?
     interview_score = @student.interview_score
-    interview_score.present? && interview_score.status.to_s == "1"
+    interview_score.present? && interview_score.status == "通过"
   end
 
   def is_limit_up? apply_set

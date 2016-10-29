@@ -1,6 +1,6 @@
 <tr id="<%= ajax_bar_element_id(interview_score) %>">
   <td class="center aligned">
-    <span><%= interview_score.student.name%></span>
+    <span><%= interview_score.student&.name%></span>
   </td>
   <td class="center aligned">
     <%=  interview_score.student_class_id%>
