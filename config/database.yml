@@ -4,7 +4,6 @@ default: &default
   reconnect: true
   username: root
   password: 
-  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default

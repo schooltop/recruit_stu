@@ -51,6 +51,18 @@ class Admin::WrittenScoresController < Admin::BaseController
   end
 
 	def export_written_score
-
+		search_date = Time.now
+    file = Spreadsheet.open "#{Rails.root}/public/xls/interview_scores.xls"
+    list = file.worksheet  0
+    interview_scores = WrittenScore.all
+    interview_scores.each_with_index do |written_score,index|
+      list[index+1,0] = written_score.student.mobile
+      list[index+1,1] = written_score.student.name
+      list[index+1,2] = written_score.score.round(2)
+      list[index+1,3] = written_score.score_order
+    end
+    xls_report = StringIO.new
+    file.write xls_report
+    send_data xls_report.string, :type => 'text/xls', :filename => "written_scores_#{search_date.to_s(:db)}.xls"
 	end
 end
