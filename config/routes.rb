@@ -41,7 +41,12 @@ Rails.application.routes.draw do
         get :export_admission_record
       end
     end
-    resources :written_applies
+    resources :written_applies do 
+      collection do
+        get :export_written_apply
+      end
+    end
+
     resources :apply_sets
   end
 

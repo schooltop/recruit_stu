@@ -1,10 +1,10 @@
 class Admin::WrittenAppliesController < Admin::BaseController
 	before_action :set_written_apply, only: [:edit, :update]
-  before_action :set_student
+  before_action :set_student,:except=>["index","export_written_apply"]
 	def index
 		@q = SearchParams.new(params[:search_params] || {})
     search_params = @q.attributes(self)
-    @written_applies = WrittenApply.preload(:student).default_where(search_params).page(params[:page]).per(10)
+    @written_applies = WrittenApply.includes(:apply_set,:student).default_where(search_params).page(params[:page]).per(10)
 	end
 
 	def new
@@ -22,7 +22,7 @@ class Admin::WrittenAppliesController < Admin::BaseController
           @written_apply.errors.add(:msg, "您的面试信息正在审验,不能预约笔试。")
         elsif apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count
           apply_set.update(status: 0)
-          @written_apply.errors.add(:msg, "笔试辅导人数已超过上线")
+          @written_apply.errors.add(:msg, "该时间段预约人数已超过上限，请选择其他时间段")
         else
            @written_apply.save
         end
@@ -44,13 +44,30 @@ class Admin::WrittenAppliesController < Admin::BaseController
           @written_apply.errors.add(:msg, "您的面试信息正在审验,不能预约笔试。")
         elsif is_limit_up?(apply_set) 
           apply_set.update(status: 0)
-          @written_apply.errors.add(:msg, "笔试辅导人数已超过上线")
+          @written_apply.errors.add(:msg, "该时间段预约人数已超过上限，请选择其他时间段")
         else
           @written_apply.update(written_apply_params)
         end
       end
       format.js
     end   
+  end
+
+  def export_written_apply
+    search_date = Time.now
+    file = Spreadsheet.open "#{Rails.root}/public/xls/written_applies.xls"
+    list = file.worksheet  0
+    written_apply = WrittenApply.all
+    written_apply.each_with_index do |written_apply,index|
+      list[index+1,0] = written_apply.student.name
+      list[index+1,1] = written_apply.student.mobile
+      list[index+1,2] = written_apply.apply_set.comment
+      list[index+1,3] = written_apply.cat_no
+      list[index+1,4] = written_apply.status
+    end
+    xls_report = StringIO.new
+    file.write xls_report
+    send_data xls_report.string, :type => 'text/xls', :filename => "written_applies_#{search_date.to_s(:db)}.xls"
   end
 	
 	private
@@ -61,7 +78,7 @@ class Admin::WrittenAppliesController < Admin::BaseController
   end
 
   def set_student
-    @current_student = current_user.student
+    @current_student = @written_apply.student
   end
 
 	def set_written_apply

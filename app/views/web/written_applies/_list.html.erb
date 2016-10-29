@@ -3,7 +3,7 @@
     <span><%= written_apply.student_id%></span>
   </td>
   <td align="center">
-    <%=  written_apply.apply_set_id%>
+    <%=  written_apply.apply_set.comment%>
   </td>
   <td align="center">
     <%= written_apply.student.name %>
@@ -14,8 +14,8 @@
   <td align="center">
     <%= written_apply.status %>
   </td>
-  <td align="center">
-    <%= link_to '编辑', edit_web_written_apply_path(written_apply) %>
+  <!-- <td align="center">
+    <%#= link_to '编辑', edit_web_written_apply_path(written_apply) %>
     <i class="edit icon"></i>
-  </td>
+  </td> -->
 </tr>

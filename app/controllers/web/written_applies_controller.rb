@@ -28,7 +28,7 @@ class Web::WrittenAppliesController < Web::BaseController
         @written_apply.errors.add(:msg, "您的面试信息正在审验,不能预约笔试。")
       elsif apply_set.limit_menber == WrittenApply.record_by_apply_set_id(apply_set.id).count
         apply_set.update(status: 0)
-        @written_apply.errors.add(:msg, "笔试辅导人数已超过上线")
+        @written_apply.errors.add(:msg, "该时间段预约人数已超过上限，请选择其他时间段")
       else 
         if @written_apply.save
           redirect_to web_written_applies_url and return
@@ -48,7 +48,7 @@ class Web::WrittenAppliesController < Web::BaseController
         @written_apply.errors.add(:msg, "您的面试信息正在审验,不能预约笔试。")
       elsif is_limit_up?(apply_set) 
         apply_set.update(status: 0)
-        @written_apply.errors.add(:msg, "笔试辅导人数已超过上线")
+        @written_apply.errors.add(:msg, "该时间段预约人数已超过上限，请选择其他时间段")
       else
         if @written_apply.update(written_apply_params)
           redirect_to web_written_applies_url and return

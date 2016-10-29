@@ -1,6 +1,6 @@
 <tr id="<%= ajax_bar_element_id(interview_score) %>">
   <td class="center aligned">
-    <span><%= interview_score.student_id%></span>
+    <span><%= interview_score.student.name%></span>
   </td>
   <td class="center aligned">
     <%=  interview_score.student_class_id%>
@@ -20,9 +20,9 @@
   <td class="center aligned">
     <%= interview_score.status %>
   </td>
-  <td class="center aligned">
-    <%= link_to edit_admin_interview_score_path(interview_score), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
+  <!-- <td class="center aligned">
+    <%#= link_to edit_admin_interview_score_path(interview_score), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
       <i class="edit icon"></i>
-    <% end %>
-  </td>
+    <%# end %>
+  </td> -->
 </tr>
