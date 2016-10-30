@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161028114335) do
+ActiveRecord::Schema.define(version: 20161030092624) do
 
   create_table "admission_records", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "student_id",                                    comment: "学生ID"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20161028114335) do
     t.text     "comment",            limit: 65535,              comment: "描述"
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
+    t.float    "interview_score",    limit: 24
+    t.float    "written_score",      limit: 24
   end
 
   create_table "apply_sets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
