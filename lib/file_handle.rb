@@ -28,7 +28,7 @@ module FileHandle
         end
         if imports == { failed: [] }
           messages[:color] = "#00DD00"
-          messages[:detail] = "笔试成绩信息导入成功"
+          messages[:detail] = "导入成功"
         end  
       else
         messages[:detail] = "文件格式要求为.xlsx格式。"
@@ -41,8 +41,7 @@ module FileHandle
   end
 
   def export_data
-    table_name = self.table_name == 'written_scores' ? 'interview_scores' : self.table_name
-    file = Spreadsheet.open "#{Rails.root}/public/xls/#{table_name}.xls"
+    file = Spreadsheet.open "#{Rails.root}/public/xls/#{self.table_name}.xls"
     list = file.worksheet  0
     self.all.each_with_index do |r,index|
       self::EXPORT_COLUMN.each do |k,v|
