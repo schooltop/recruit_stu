@@ -1,15 +1,23 @@
 class InterviewScore < ApplicationRecord
   belongs_to :student
+  extend FileHandle
   enum status: {
     "通过": 1,
     "不通过": 0
   }
- InterviewScore_COLUMNS = {
-  	  name: 0,
-	    score_order: 1,
-	    score: 2,
-	    mobile: 3
-    }
+  IMPORT_COLUMNS = {
+	  name: 0,
+    score_order: 1,
+    score: 2,
+    mobile: 3
+  }
+
+  EXPORT_COLUMN = {
+    'student|mobile': 0,
+    'student|name': 1,
+    'score': 2,
+    'score_order': 3
+  }
 
     # 导入面试成绩数据
   def self.save_from_hash(hash, current_user)

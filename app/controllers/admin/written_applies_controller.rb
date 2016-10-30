@@ -54,20 +54,8 @@ class Admin::WrittenAppliesController < Admin::BaseController
   end
 
   def export_written_apply
-    search_date = Time.now
-    file = Spreadsheet.open "#{Rails.root}/public/xls/written_applies.xls"
-    list = file.worksheet  0
-    written_apply = WrittenApply.all
-    written_apply.each_with_index do |written_apply,index|
-      list[index+1,0] = written_apply.student&.name
-      list[index+1,1] = written_apply.student&.mobile
-      list[index+1,2] = written_apply.apply_set&.comment
-      list[index+1,3] = written_apply.cat_no
-      list[index+1,4] = written_apply.status
-    end
-    xls_report = StringIO.new
-    file.write xls_report
-    send_data xls_report.string, :type => 'text/xls', :filename => "written_applies_#{search_date.to_s(:db)}.xls"
+    xls_report = WrittenApply.export_data
+    send_data xls_report, :type => 'text/xls', :filename => "#{WrittenApply.table_name}_#{Time.now.to_s(:db)}.xls"
   end
 	
 	private

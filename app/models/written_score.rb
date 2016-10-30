@@ -1,11 +1,20 @@
 class WrittenScore < ApplicationRecord
   belongs_to :student
-  SCORE_COLUMNS = {
+  extend FileHandle
+  IMPORT_COLUMNS = {
     name: 0,
     score_order: 1,
     score: 2,
     mobile: 3
   }
+
+  EXPORT_COLUMN = {
+    'student|mobile': 0,
+    'student|name': 1,
+    'score': 2,
+    'score_order': 3
+  }
+
   enum status: {
     "通过": 1,
     "不通过": 0
