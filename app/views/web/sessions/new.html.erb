@@ -9,6 +9,7 @@
 
 <body id="loginBackground">
 <div class="login_container">
+
   <div class="ui centered stackable grid">
     <div class="six wide column">
       <div class="logo"></div>
@@ -19,7 +20,9 @@
         </div>
       <% end %>
       <div class="ui segments" align="center">
+
         <div class="ui segment">
+           <img style="margin-top:-30px;" src="http://img.bimba.edu.cn/res/bimba_cn2/images/header/brand/bimba.png" alt="BIMBA">
           <%= simple_form_for resource, as: resource_name, url: session_path(resource_name), html: { id: 'login_form', novalidate: true, class: 'ui form' } do |f|  %>
             <div class="field">
               <div class="ui left icon input">
