@@ -18,7 +18,7 @@
     <%= apply_set.limit_menber %>
   </td>
   <td class="center aligned">
-    <%= apply_set.status %>
+    <%= apply_set.status == 0 ? '关闭' : '开启'%>
   </td>
   <td class="center aligned">
     <%= apply_set.show_at&.strftime('%Y-%m-%d') %>
