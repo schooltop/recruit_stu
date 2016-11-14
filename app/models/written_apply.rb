@@ -1,7 +1,7 @@
 class WrittenApply < ApplicationRecord
   belongs_to :student
   belongs_to :apply_set
-  extend FileHandle
+  include FileHandle
   enum status: {
     "待审核": 0,
     "通过": 1,

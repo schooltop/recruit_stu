@@ -1,6 +1,6 @@
 class InterviewScore < ApplicationRecord
   belongs_to :student
-  extend FileHandle
+  include FileHandle
   enum status: {
     "通过": 1,
     "不通过": 0

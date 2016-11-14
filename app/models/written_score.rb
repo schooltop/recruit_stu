@@ -1,6 +1,6 @@
 class WrittenScore < ApplicationRecord
   belongs_to :student
-  extend FileHandle
+  include FileHandle
   IMPORT_COLUMNS = {
     name: 0,
     score_order: 1,
