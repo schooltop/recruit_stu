@@ -13,10 +13,10 @@ class InterviewScore < ApplicationRecord
   }
 
   EXPORT_COLUMN = {
-    'student|mobile': 0,
-    'student|name': 1,
+    'student|name': 0,
+    'score_order': 1 ,	  
     'score': 2,
-    'score_order': 3
+    'student|mobile': 3	  
   }
 
     # 导入面试成绩数据

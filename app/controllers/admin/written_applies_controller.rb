@@ -15,7 +15,7 @@ class Admin::WrittenAppliesController < Admin::BaseController
     @written_apply = WrittenApply.new(written_apply_params)
     respond_to do |format|
       if written_apply_params[:apply_set_id].blank?
-        @written_apply.errors.add(:msg, "请选择笔试辅导时间段")
+        @written_apply.errors.add(:msg, "请选择讲座时间段")
       else
         apply_set = ApplySet.find(written_apply_params[:apply_set_id])
         if !can_written_apply?
@@ -37,7 +37,7 @@ class Admin::WrittenAppliesController < Admin::BaseController
   def update
     respond_to do |format|
       if written_apply_params[:apply_set_id].blank?
-        @written_apply.errors.add(:msg, "请选择笔试辅导时间段")
+        @written_apply.errors.add(:msg, "请选择讲座时间段")
       else
         apply_set = ApplySet.find(written_apply_params[:apply_set_id])
         if !can_written_apply?

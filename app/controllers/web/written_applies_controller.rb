@@ -5,7 +5,7 @@ class Web::WrittenAppliesController < Web::BaseController
 
 	def index
      session[:top_tab] = nil
-     session[:top_tab_tipe] = "笔试辅导预约"
+     session[:top_tab_tipe] = "讲座预约"
 	   @written_applies = WrittenApply.preload(:student).default_where(student_id:@student.id)
      redirect_to :action=>"new" unless @written_applies.size>0
 	end
@@ -21,7 +21,7 @@ class Web::WrittenAppliesController < Web::BaseController
   def create  
     @written_apply = WrittenApply.new(written_apply_params)
     if written_apply_params[:apply_set_id].blank?
-      @written_apply.errors.add(:msg, "请选择笔试辅导时间段")
+      @written_apply.errors.add(:msg, "请选择讲座时间段")
     else
       apply_set = ApplySet.find(written_apply_params[:apply_set_id])
       if !can_written_apply?
@@ -41,7 +41,7 @@ class Web::WrittenAppliesController < Web::BaseController
 
   def update
     if written_apply_params[:apply_set_id].blank?
-      @written_apply.errors.add(:msg, "请选择笔试辅导时间段")
+      @written_apply.errors.add(:msg, "请选择讲座时间段")
     else
       apply_set = ApplySet.find(written_apply_params[:apply_set_id])
       if !can_written_apply?
