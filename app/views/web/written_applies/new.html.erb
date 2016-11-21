@@ -9,15 +9,17 @@
 </div>
 
 
-<div style="width:100%" align="left"> 您好，恭喜您通过面试，进入笔试准备阶段。现请您认真阅读下面的［预约说明］，并选择一个意向的讲座时间段，请您根据预约的时间参加讲座，谢谢您的配合！</div>
+<div style="width:100%" align="left">   同学您好，恭喜您顺利通过面试预审核，进入笔试阶段的准备。为增加大家对EMBA项目和后续准备工作的了解，更好适应EMBA课程学习，EMBA中心为大家策划了主题为《北大国发院EMBA后续学习沟通会》的专题讲座,请您仔细阅读预约说明，并选择一个意向参加的日期，收到您的预约后，我们会以微信的形式给您发送确认通知，谢谢您的配合！</div>
 
 <div style="width:100%" align="left"> ［预约说明］</div>
 
-<div style="width:100%" align="left"> 1. 请根据当前可选的讲座日期预约，每人只能预约一次。</div>
+<div style="width:100%" align="left"> 1. 可选时间段为11月24日、11月26日、12月3日、12月4日四天，四场的讲授内容是一致的，请您根据自己的日程安排，从中选择一个合适的时间点即可，每人只能预约一次。</div>
 
-<div style="width:100%" align="left"> 2. 讲座的每个时间段均设有上线人数，根据先到先选的原则，各时间段若选满则停止预约，请您选择其他可预约时段。</div>
+<div style="width:100%" align="left"> 2. 讲座时间为全天，中午学校会为大家统一订简餐，请务必预留一整天的时间。</div>
 
-<div style="width:100%" align="left"> 3. 如果您开车进校面试，请在下方“车辆预约”处填写您的车牌号，并于当天从东北门入校。</div>
+<div style="width:100%" align="left"> 3. 届时请携带100元现金提交（包含简餐、茶歇等费用）</div>
+
+<div style="width:100%" align="left"> 4. 本次讲座请认真对待，准时到场，并携带纸质笔记本和签字笔用于做笔记。</div>
 
 <%= simple_form_for [@written_apply], url: web_written_applies_path, method: :post do |f| %>
   <% if @written_apply.errors.any? %>
@@ -39,11 +41,9 @@
       <%= label_tag 'email', '邮箱:'%>
       <%= text_field_tag 'email', @student.email%>
     </div>
-    <div class="one field form-part">
-      <%= label_tag 'cat_no', '车牌号:'%>
-      <%= text_field_tag 'written_apply[cat_no]', @written_apply.cat_no%>
-      <%= f.hidden_field :student_id,value: @student.id%>
-    </div>
+ 
+    <%= f.hidden_field :student_id,value: @student.id%>
+
     <div class="one field form-part">
       <%= label_tag 'time', '辅导时间:'%>
       <%= f.select :apply_set_id, apply_set_options, {include_blank: "请选择一个辅导时间段"} %>
