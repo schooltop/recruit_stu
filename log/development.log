@@ -4109,3 +4109,4 @@ Processing by Admin::InterviewScoresController#create_import_interview_score as 
 Completed 200 OK in 109ms (Views: 24.4ms | ActiveRecord: 0.3ms)
 
 
+DEPRECATION WARNING: [SIMPLE_FORM] SimpleForm.form_class= is deprecated and will be removed in 4.x. Use SimpleForm.default_form_class= instead (called from block in <top (required)> at /var/www/recruit_stu/config/initializers/simple_form_semantic.rb:60)

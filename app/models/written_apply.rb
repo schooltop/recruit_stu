@@ -14,6 +14,6 @@ class WrittenApply < ApplicationRecord
     'cat_no': 3,#列名
     'status': 4
   }
-  #validates_uniqueness_of :student_id, :message => "已存在申请记录"
+  validates_uniqueness_of :student_id, :message => "已存在申请记录"
   scope :record_by_apply_set_id, -> id {where(apply_set_id: id)}
 end

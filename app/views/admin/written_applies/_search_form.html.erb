@@ -2,8 +2,8 @@
   <div class="ui blue segment">
     <%= simple_form_for @q,  url: admin_written_applies_path, method: :get, wrapper: 'semantic_search_form' do |f| %>
       <div class="ui five column grid">
-        <%= f.input 'name-like', placeholder: '姓名' %>
-        <%= f.input 'cat_no-like', placeholder: '学号' %>
+        <%= f.input 'student.name', placeholder: '姓名' %>
+        <%#= f.input 'student.itemno', placeholder: '学号' %>
         <div class="column">
           <%= f.submit '搜索', class: 'ui primary button' %>
         </div>

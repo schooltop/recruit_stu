@@ -2,7 +2,7 @@
   <div class="ui blue segment">
     <%= simple_form_for @q,  url: admin_written_scores_path, method: :get, wrapper: 'semantic_search_form' do |f| %>
       <div class="ui five column grid">
-        <%= f.input 'student_id-eq', placeholder: '学生ID' %>
+        <%= f.input 'student.name', placeholder: '学生名称' %>
         <div class="column">
           <%= f.submit '搜索', class: 'ui primary button' %>
         </div>
