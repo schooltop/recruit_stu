@@ -1,258 +1,358 @@
 GIT
-  remote: git://github.com/amatsuda/kaminari.git
-  revision: 5344ee9896d4a101d54b86924da9518b0bbdcc5b
+  remote: https://github.com/amatsuda/kaminari.git
+  revision: ff5c8425eb7191a4e1cb6013b2a15bf38a725a5f
   specs:
-    kaminari (1.0.0.alpha)
+    kaminari (1.1.1)
       activesupport (>= 4.1.0)
-      kaminari-actionview
-      kaminari-activerecord
-      kaminari-core
-    kaminari-actionview (0.1.0)
+      kaminari-actionview (= 1.1.1)
+      kaminari-activerecord (= 1.1.1)
+      kaminari-core (= 1.1.1)
+    kaminari-actionview (1.1.1)
       actionview
-    kaminari-activerecord (0.1.0)
+      kaminari-core (= 1.1.1)
+    kaminari-activerecord (1.1.1)
       activerecord
-    kaminari-core (0.1.0)
+      kaminari-core (= 1.1.1)
+    kaminari-core (1.1.1)
 
 GIT
-  remote: git://github.com/qinmingyuan/default_where.git
-  revision: 1b8f60d4eda271590faf757298f19dc37d63f0d6
-  tag: v2.0.3
+  remote: https://github.com/jamst/default_where.git
+  revision: 075b1222746e5f6b9ec8819caa2b66fd0d75a30e
   specs:
     default_where (2.0.0)
       activerecord (>= 4.0.0)
 
-GEM
-  remote: https://ruby.taobao.org/
+GIT
+  remote: https://github.com/plataformatec/devise.git
+  revision: 14863ba4c92cd9781a961be0486f0ea7dfe84144
   specs:
-    actioncable (5.0.0.rc2)
-      actionpack (= 5.0.0.rc2)
-      nio4r (~> 1.2)
+    devise (4.7.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0)
+      responders
+      warden (~> 1.2.3)
+
+GIT
+  remote: https://github.com/rails/sass-rails.git
+  revision: 551251bddec4d6b75446cb1c1630ed26e5318f8e
+  specs:
+    sass-rails (6.0.0)
+      sassc-rails (~> 2.1, >= 2.1.1)
+
+GIT
+  remote: https://github.com/roo-rb/roo-xls.git
+  revision: 561e295335a0faddb4384021f748fa293882643b
+  specs:
+    roo-xls (1.2.0)
+      nokogiri
+      roo (>= 2.0.0, < 3)
+      spreadsheet (> 0.9.0)
+
+GIT
+  remote: https://github.com/xor3/csv-importer.git
+  revision: 09bb3a5a42f633ab6923031d82a64678c7239d3e
+  specs:
+    csv-importer (0.3.1)
+      virtus
+
+GEM
+  remote: https://gems.ruby-china.com/
+  specs:
+    actioncable (5.1.0.rc2)
+      actionpack (= 5.1.0.rc2)
+      nio4r (~> 2.0)
       websocket-driver (~> 0.6.1)
-    actionmailer (5.0.0.rc2)
-      actionpack (= 5.0.0.rc2)
-      actionview (= 5.0.0.rc2)
-      activejob (= 5.0.0.rc2)
+    actionmailer (5.1.0.rc2)
+      actionpack (= 5.1.0.rc2)
+      actionview (= 5.1.0.rc2)
+      activejob (= 5.1.0.rc2)
       mail (~> 2.5, >= 2.5.4)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
-    actionpack (5.0.0.rc2)
-      actionview (= 5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
-      rack (~> 2.x)
+      rails-dom-testing (~> 2.0)
+    actionpack (5.1.0.rc2)
+      actionview (= 5.1.0.rc2)
+      activesupport (= 5.1.0.rc2)
+      rack (~> 2.0)
       rack-test (~> 0.6.3)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
+    actionview (5.1.0.rc2)
+      activesupport (= 5.1.0.rc2)
       builder (~> 3.1)
-      erubis (~> 2.7.0)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
-      rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    activejob (5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
+      erubi (~> 1.4)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    activejob (5.1.0.rc2)
+      activesupport (= 5.1.0.rc2)
       globalid (>= 0.3.6)
-    activemodel (5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
-    activerecord (5.0.0.rc2)
-      activemodel (= 5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
-      arel (~> 7.0)
-    activesupport (5.0.0.rc2)
+    activemodel (5.1.0.rc2)
+      activesupport (= 5.1.0.rc2)
+    activerecord (5.1.0.rc2)
+      activemodel (= 5.1.0.rc2)
+      activesupport (= 5.1.0.rc2)
+      arel (~> 8.0)
+    activesupport (5.1.0.rc2)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    arel (7.1.4)
-    autoprefixer-rails (6.5.1.1)
-      execjs
-    bcrypt (3.1.11)
-    bootstrap-sass (3.3.7)
-      autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
-    builder (3.2.2)
-    byebug (9.0.6)
-    carrierwave (0.11.2)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      json (>= 1.7)
-      mime-types (>= 1.16)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    akami (1.3.1)
+      gyoku (>= 0.4.0)
+      nokogiri
+    arel (8.0.0)
+    awesome_print (1.8.0)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    bcrypt (3.1.13)
+    bindex (0.8.1)
+    builder (3.2.3)
+    byebug (11.0.1)
+    cancancan (3.0.1)
+    carrierwave (2.0.2)
+      activemodel (>= 5.0.0)
+      activesupport (>= 5.0.0)
+      addressable (~> 2.6)
+      image_processing (~> 1.1)
       mimemagic (>= 0.3.0)
+      mini_mime (>= 0.1.3)
     chronic (0.10.2)
-    coffee-rails (4.2.1)
-      coffee-script (>= 2.2.0)
-      railties (>= 4.0.0, < 5.2.x)
-    coffee-script (2.4.1)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.10.0)
-    concurrent-ruby (1.0.2)
-    debug_inspector (0.0.2)
-    devise (4.2.0)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 4.1.0, < 5.1)
-      responders
-      warden (~> 1.2.3)
-    erubis (2.7.0)
-    execjs (2.7.0)
-    ffi (1.9.14)
-    globalid (0.3.7)
-      activesupport (>= 4.1.0)
-    httparty (0.14.0)
+    cocoon (1.2.14)
+    coderay (1.1.2)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    concurrent-ruby (1.1.5)
+    crass (1.0.5)
+    database_cleaner (1.7.0)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    equalizer (0.0.11)
+    erubi (1.9.0)
+    ffi (1.11.3)
+    globalid (0.4.2)
+      activesupport (>= 4.2.0)
+    gyoku (1.3.1)
+      builder (>= 2.1.2)
+    httparty (0.17.1)
+      mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
-    i18n (0.7.0)
-    jbuilder (2.6.0)
-      activesupport (>= 3.0.0, < 5.1)
-      multi_json (~> 1.2)
-    jquery-rails (4.2.1)
+    httpi (2.4.4)
+      rack
+      socksify
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
+    ice_nine (0.11.2)
+    image_processing (1.9.3)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.13, < 3)
+    jbuilder (2.9.1)
+      activesupport (>= 4.2.0)
+    jquery-rails (4.3.5)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
-    json (2.0.2)
+    jwt (2.2.1)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    loofah (2.0.3)
+    loofah (2.4.0)
+      crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.6.4)
-      mime-types (>= 1.16, < 4)
-    method_source (0.8.2)
-    mime-types (3.1)
+    mail (2.7.1)
+      mini_mime (>= 0.1.1)
+    meta-tags (2.13.0)
+      actionpack (>= 3.2.0, < 6.1)
+    method_source (0.9.2)
+    mime-types (3.3)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
-    mimemagic (0.3.2)
-    mini_portile2 (2.1.0)
-    minitest (5.9.1)
-    multi_json (1.12.1)
-    multi_xml (0.5.5)
-    mysql2 (0.4.5)
-    nio4r (1.2.1)
-    nokogiri (1.6.8.1)
-      mini_portile2 (~> 2.1.0)
-    non-stupid-digest-assets (1.0.8)
+    mime-types-data (3.2019.1009)
+    mimemagic (0.3.3)
+    mina (1.0.6)
+      open4 (~> 1.3.4)
+      rake
+    mina-whenever (1.0.1)
+      mina (~> 1.0)
+    mini_magick (4.9.5)
+    mini_mime (1.0.2)
+    mini_portile2 (2.4.0)
+    minitest (5.13.0)
+    multi_xml (0.6.0)
+    mysql2 (0.4.10)
+    nio4r (2.5.2)
+    nokogiri (1.10.5)
+      mini_portile2 (~> 2.4.0)
+    non-stupid-digest-assets (1.0.9)
       sprockets (>= 2.0)
+    nori (2.6.0)
+    open4 (1.3.4)
     orm_adapter (0.5.0)
-    passenger (5.0.30)
-      rack
-      rake (>= 0.8.1)
-    rack (2.0.1)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-byebug (3.7.0)
+      byebug (~> 11.0)
+      pry (~> 0.10)
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
+    public_suffix (4.0.1)
+    puma (4.3.0)
+      nio4r (~> 2.0)
+    rack (2.0.7)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails (5.0.0.rc2)
-      actioncable (= 5.0.0.rc2)
-      actionmailer (= 5.0.0.rc2)
-      actionpack (= 5.0.0.rc2)
-      actionview (= 5.0.0.rc2)
-      activejob (= 5.0.0.rc2)
-      activemodel (= 5.0.0.rc2)
-      activerecord (= 5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
+    rails (5.1.0.rc2)
+      actioncable (= 5.1.0.rc2)
+      actionmailer (= 5.1.0.rc2)
+      actionpack (= 5.1.0.rc2)
+      actionview (= 5.1.0.rc2)
+      activejob (= 5.1.0.rc2)
+      activemodel (= 5.1.0.rc2)
+      activerecord (= 5.1.0.rc2)
+      activesupport (= 5.1.0.rc2)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 5.0.0.rc2)
+      railties (= 5.1.0.rc2)
       sprockets-rails (>= 2.0.0)
-    rails-deprecated_sanitizer (1.0.3)
-      activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.7)
-      activesupport (>= 4.2.0.beta, < 5.0)
-      nokogiri (~> 1.6.0)
-      rails-deprecated_sanitizer (>= 1.0.1)
-    rails-html-sanitizer (1.0.3)
-      loofah (~> 2.0)
-    railties (5.0.0.rc2)
-      actionpack (= 5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
+    rails-dom-testing (2.0.3)
+      activesupport (>= 4.2.0)
+      nokogiri (>= 1.6)
+    rails-html-sanitizer (1.3.0)
+      loofah (~> 2.3)
+    railties (5.1.0.rc2)
+      actionpack (= 5.1.0.rc2)
+      activesupport (= 5.1.0.rc2)
       method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (11.3.0)
-    rb-fsevent (0.9.7)
-    rb-inotify (0.9.7)
-      ffi (>= 0.5.0)
-    remotipart (1.3.1)
-    responders (2.3.0)
-      railties (>= 4.2.0, < 5.1)
-    roo (2.5.1)
+    rake (13.0.1)
+    rb-fsevent (0.10.3)
+    rb-inotify (0.10.0)
+      ffi (~> 1.0)
+    remotipart (1.4.3)
+    responders (3.0.0)
+      actionpack (>= 5.0)
+      railties (>= 5.0)
+    rolify (5.2.0)
+    roo (2.8.2)
       nokogiri (~> 1)
-      rubyzip (~> 1.1, < 2.0.0)
-    ruby-ole (1.2.12)
-    rubyzip (1.2.0)
-    sass (3.4.22)
-    sass-rails (5.0.6)
-      railties (>= 4.0.0, < 6)
-      sass (~> 3.1)
-      sprockets (>= 2.8, < 4.0)
-      sprockets-rails (>= 2.0, < 4.0)
-      tilt (>= 1.1, < 3)
-    simple_form (3.3.1)
-      actionpack (> 4, < 5.1)
-      activemodel (> 4, < 5.1)
-    spreadsheet (1.1.3)
+      rubyzip (>= 1.2.1, < 2.0.0)
+    ruby-ole (1.2.12.2)
+    ruby-progressbar (1.10.1)
+    ruby-vips (2.0.16)
+      ffi (~> 1.9)
+    rubyzip (1.3.0)
+    sassc (2.2.1)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
+    savon (2.12.0)
+      akami (~> 1.2)
+      builder (>= 2.1.2)
+      gyoku (~> 1.2)
+      httpi (~> 2.3)
+      nokogiri (>= 1.8.1)
+      nori (~> 2.4)
+      wasabi (~> 3.4)
+    seventeen_mon (1.0.2)
+    simple_form (5.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
+    sitemap_generator (6.0.2)
+      builder (~> 3.0)
+    socksify (1.7.1)
+    spreadsheet (1.2.5)
       ruby-ole (>= 1.0)
-    spring (2.0.0)
-      activesupport (>= 4.2)
+    spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
       spring (>= 1.2, < 3.0)
-    sprockets (3.7.0)
+    sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.2.0)
+    sprockets-rails (3.2.1)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    thor (0.19.1)
-    thread_safe (0.3.5)
-    tilt (2.0.5)
-    turbolinks (5.0.1)
-      turbolinks-source (~> 5)
-    turbolinks-source (5.0.0)
-    tzinfo (1.2.2)
+    thor (0.20.3)
+    thread_safe (0.3.6)
+    tilt (2.0.10)
+    turbolinks (5.2.1)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
+    tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (3.0.2)
-      execjs (>= 0.3.0, < 3)
-    warden (1.2.6)
-      rack (>= 1.0)
-    web-console (3.3.0)
-      activemodel (>= 4.2)
-      debug_inspector
-      railties (>= 4.2)
-    websocket-driver (0.6.4)
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
+    warden (1.2.8)
+      rack (>= 2.0.6)
+    wasabi (3.5.0)
+      httpi (~> 2.0)
+      nokogiri (>= 1.4.2)
+    web-console (3.7.0)
+      actionview (>= 5.0)
+      activemodel (>= 5.0)
+      bindex (>= 0.4.0)
+      railties (>= 5.0)
+    websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.2)
-    whenever (0.9.7)
+    websocket-extensions (0.1.4)
+    whenever (1.0.0)
       chronic (>= 0.6.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass
+  awesome_print
   byebug
+  cancancan
   carrierwave
-  coffee-rails (~> 4.2)
+  cocoon
+  csv-importer!
+  database_cleaner
   default_where!
-  devise
-  execjs
+  devise!
   httparty
   jbuilder (~> 2.5)
   jquery-rails
+  jwt
   kaminari!
   listen (~> 3.0.5)
-  mysql2
+  meta-tags
+  mina (= 1.0.6)
+  mina-whenever
+  mysql2 (~> 0.4.4)
   non-stupid-digest-assets
-  passenger
-  rails (= 5.0.0.rc2)
+  pry-byebug
+  pry-rails
+  puma
+  rails (>= 5.0.0.rc2, < 5.1)
+  rake
   remotipart (~> 1.2)
+  rolify
   roo
-  sass-rails (~> 5.0)
+  roo-xls!
+  ruby-progressbar
+  sass-rails!
+  savon
+  seventeen_mon
   simple_form
+  sitemap_generator
   spreadsheet
   spring
   spring-watcher-listen (~> 2.0.0)
-  turbolinks (~> 5)
-  tzinfo-data
-  uglifier (>= 1.3.0)
+  turbolinks
   web-console
   whenever
 
 BUNDLED WITH
-   1.13.6
+   1.17.3

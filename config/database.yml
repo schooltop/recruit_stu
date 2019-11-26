@@ -3,7 +3,7 @@ default: &default
   pool: 5
   reconnect: true
   username: root
-  password: 
+  password: root123
 
 development:
   <<: *default
@@ -20,7 +20,6 @@ staging:
   password: root
   host: localhost
   port: 3306
-  socket: /var/run/mysqld/mysqld.sock
 
 production:
   <<: *default
@@ -29,4 +28,4 @@ production:
   password: root
   host: localhost
   port: 3306
-  socket: /var/run/mysqld/mysqld.sock
+

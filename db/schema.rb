@@ -77,7 +77,7 @@ ActiveRecord::Schema.define(version: 20161030092624) do
     t.index ["user_id"], name: "index_permissions_roles_on_user_id", using: :btree
   end
 
-  create_table "roles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "roles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "角色表" do |t|
     t.integer  "parent_id"
     t.string   "name"
     t.datetime "created_at", null: false
@@ -143,13 +143,13 @@ ActiveRecord::Schema.define(version: 20161030092624) do
   end
 
   create_table "written_applies", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "student_id",                comment: "学生ID"
-    t.integer  "apply_set_id",              comment: "申请ID"
-    t.string   "name",                      comment: "学生名字"
-    t.string   "cat_no",                    comment: "学生名字"
-    t.integer  "status",                    comment: "学生申请状态"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "student_id",                            comment: "学生ID"
+    t.integer  "apply_set_id",                          comment: "申请ID"
+    t.string   "name",                                  comment: "学生名字"
+    t.string   "cat_no",                                comment: "车号"
+    t.integer  "status",       default: 0,              comment: "学生申请状态"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "written_scores", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

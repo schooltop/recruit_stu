@@ -1,7 +1,7 @@
 class Web::StudentsController < Web::BaseController
-  before_filter :top_tab, :only => [:user_edit_self,:porsonal_inf]
-  before_filter :left_tab, :only => [:user_edit_self,:porsonal_inf]
-  before_filter :minit_tab, :only => [:user_edit_self,:porsonal_inf]
+  before_action :top_tab, :only => [:user_edit_self,:porsonal_inf]
+  before_action :left_tab, :only => [:user_edit_self,:porsonal_inf]
+  before_action :minit_tab, :only => [:user_edit_self,:porsonal_inf]
 
   def porsonal_inf
   	session[:top_tab_tipe] = "个人信息"

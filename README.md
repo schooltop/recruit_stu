@@ -1,24 +1,28 @@
-# README
+== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+ruby 2.6.3
 
-* Ruby version
+gem install bundle
 
-* System dependencies
+bundle install
 
-* Configuration
+# 安装初始化mysql数据库
+rake db:create
 
-* Database creation
+rake db:migrate 
 
-* Database initialization
+rake db:seed
 
-* How to run the test suite
+# 启动3000端口
+rails s
 
-* Services (job queues, cache servers, search engines, etc.)
+# 访问前台
+http://localhost:3000/
 
-* Deployment instructions
+账号：1@.com  密码：11111111
 
-* ...
+# 访问后台
+http://localhost:3000/admin/students
+
+账号：2@.com  密码：11111111

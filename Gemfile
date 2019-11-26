@@ -1,67 +1,71 @@
-source 'https://ruby.taobao.org/'
+source 'https://gems.ruby-china.com'
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
+  "https://github.com/#{repo_name}.git"
+end
+# source 'https://gems.ruby-china.org'
 
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.0.rc2'
-# Use sqlite3 as the database for Active Record
-gem 'mysql2'
-# Use Passenger as the app server
-gem 'passenger'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
-
-gem 'execjs'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
-gem 'bootstrap-sass'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'rails', '>= 5.0.0.rc2', '< 5.1'
+gem 'puma'
 gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'rake'
 
-# Third Part
-gem 'kaminari', github: 'amatsuda/kaminari'
-gem 'simple_form'
-gem 'default_where', github: 'qinmingyuan/default_where', tag: 'v2.0.3'
-# 权限控制
-gem 'devise'#, git: 'https://github.com/plataformatec/devise.git'
-# 定时任务
-gem 'whenever', :require => false
-# 异步上传文件
-gem 'remotipart', '~> 1.2'
-gem 'spreadsheet' 
-gem 'roo', require: false
-gem 'carrierwave'
+# Assets
+gem 'sass-rails', github: 'rails/sass-rails'
+gem 'jquery-rails'
+gem 'non-stupid-digest-assets'
+gem 'turbolinks'
+
+# Login & Authority
+gem 'devise', git: 'https://github.com/plataformatec/devise.git'
+gem 'cancancan'
+gem 'rolify'
+
+# Store
+gem 'mysql2', '~> 0.4.4'
+
+#Third Part
 gem 'httparty'
-gem "non-stupid-digest-assets"
+gem 'jwt'
+gem 'meta-tags'
+gem 'simple_form'
+gem 'carrierwave'
+gem 'remotipart', '~> 1.2'
+gem 'sitemap_generator'
+gem 'spreadsheet'
+gem 'roo'
+gem 'whenever', :require => false
+gem 'kaminari', github: 'amatsuda/kaminari'
+gem 'default_where', github: 'jamst/default_where'
+gem 'csv-importer', github: 'xor3/csv-importer'
+gem 'roo-xls', github: 'roo-rb/roo-xls'
+gem 'cocoon'
+gem 'savon'
+gem 'seventeen_mon'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# Engines
+# gem 'the_history', github: 'yigexiangfa/the_history', tag: 'v0.2.7'
+# gem 'rails_log', github: 'qinmingyuan/rails_log', tag: 'v2.0'
+# gem 'rails_com', github: 'qinmingyuan/rails_com', tag: 'v0.7.3' 
+# gem 'default_form', github: 'qinmingyuan/default_form', tag: 'v2.4'
+
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # gem 'factory_girl'
+  # gem 'factory_girl_rails'
+  gem 'pry-rails'
+  gem 'database_cleaner'
   gem 'byebug', platform: :mri
+  gem 'pry-byebug'
+  gem 'ruby-progressbar'
+  gem 'awesome_print'
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console'
   gem 'listen', '~> 3.0.5'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'web-console'
+  gem 'mina', '1.0.6'
+  gem 'mina-whenever'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
