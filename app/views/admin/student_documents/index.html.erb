@@ -1,0 +1,64 @@
+<div class="ui grid">
+  <div class="left floated fourteen wide column">
+    <h2>学生信息</h2>
+  </div>
+</div>
+<%= render 'search_form'  %>
+<div class="ui blue segment">
+  <a class="ui primary button" href="<%=import_student_admin_students_path%>"><i class="upload icon"></i>导入学生</a> 
+  <a class="ui primary button" href="<%=export_student_admin_students_path%>"><i class="download icon"></i>导出学生</a> 
+  <a class="ui primary button" href="<%=new_admin_student_path%>" data-remote="true" ><i class="plus icon"></i>新增学生</a> 
+  
+  <table class="ui selectable striped celled table">
+    <thead>
+    <tr >
+      <th class="center aligned">身份证号</th>
+      <th class="center aligned">邮箱</th>
+      <th class="center aligned">姓名</th>
+      <th class="center aligned">手机</th>
+      <th class="center aligned">学号</th>
+      <th class="center aligned">学生状态</th>
+      <th class="center aligned">预约状态</th>
+      <th class="center aligned">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%#= render partial: 'list', collection: @students, as: :student %>
+    <% @students.each do |student|%>
+       <tr id="<%= ajax_bar_element_id(student) %>">
+        <td class="center aligned">
+          <span><%= student.id_card%></span>
+        </td>
+        <td class="center aligned">
+          <%=  student.email%>
+        </td>
+        <td class="center aligned">
+          <%= student.name %> 
+        </td>
+        <td class="center aligned">
+          <%= student.mobile %>
+        </td>
+        <td class="center aligned">
+          <%= student.student_no %>
+        </td>
+        <td class="center aligned">
+          <%= student.status %>
+        </td>
+        <td class="center aligned">
+          <%= student.apply_status %>
+        </td>
+        <td class="center aligned">
+          <%= link_to edit_admin_student_document_path(student), remote: true, data: {content: '修改', variation: 'inverted'}, class: 'ui blue icon button' do %>
+            <i class="edit icon"></i>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+
+    </tbody>
+  </table>
+  <span class="blue">
+    <%= page_entries_info(@students) %>
+  </span>
+  <%= paginate(@students, :theme => 'admin')%>
+</div>

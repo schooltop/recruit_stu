@@ -20,6 +20,13 @@ Rails.application.routes.draw do
       end  
     end
     resources :student_classes
+
+    resources :student_documents do 
+      collection do
+        get :test_student
+      end
+    end
+
     resources :interview_scores do
       collection do
         get :import_interview_score
